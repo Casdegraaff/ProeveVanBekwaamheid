@@ -11,6 +11,19 @@
 
 ## Het project
 
+## Geproduceerde game onderdelen
+
+### Cas
+-  
+-
+
+### Ruben
+-
+-
+
+### Quinn
+- 
+-
 
 ## Software
 Engine:
