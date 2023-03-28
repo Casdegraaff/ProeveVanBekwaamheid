@@ -22,4 +22,10 @@ public class Main_menu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    //When in game you can go back to main menu//
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
