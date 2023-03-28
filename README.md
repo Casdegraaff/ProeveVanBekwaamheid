@@ -39,4 +39,4 @@ overige software:
 - Trello: https://trello.com/b/a9ObwGlP/proeve-van-bekwaamheid
 
 ## Sprints
-- Sprint 1: 20/03/2023 - 
+- Sprint 1: 20/03/2023 - 07/04/2023
