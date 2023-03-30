@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
+    // This manages what name and sentences will be shown and clears the previous sentences
     public void StartDialogue(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
@@ -33,7 +34,7 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
-
+    //this starts te routine to display the next sentence and quits the conversation is nothing is left
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
@@ -47,7 +48,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
 
     }
-
+     //this animates the sentence to make it feel like its being generated
     IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
@@ -57,7 +58,7 @@ public class DialogueManager : MonoBehaviour
                 yield return null;
             }
     }
-
+    // this closes the dialoguebox
     void EndDialogue()
     {
         Debug.Log("end of conversation");
