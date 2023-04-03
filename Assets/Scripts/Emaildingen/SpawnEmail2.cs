@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SpawnEmail : MonoBehaviour
+public class SpawnEmail2 : MonoBehaviour
 {
     // the button that u use
     public GameObject EmailButton;
