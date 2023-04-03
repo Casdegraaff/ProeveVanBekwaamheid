@@ -5,19 +5,21 @@ using UnityEngine.UI;
 
 public class SpawnEmail : MonoBehaviour
 {
-    public GameObject Email; 
+    //Email Gameobject//
+    public GameObject Email;
 
+    //This is were the spawpoint is//
     Vector3 Spawnpoint;
-    // Start is called before the first frame update
+   
+    //The spawnpoint is set here//
     void Start()
     {
-        Spawnpoint = new Vector3(0,0,200);
+        Spawnpoint = new Vector3(-0.13f,0.88f,-2);
     }
 
+    //Function for spawning the email//
     public void EmailSpawn()
     {
-        Debug.Log("Press");
         Instantiate( Email, Spawnpoint, Quaternion.identity);
-        Debug.Log("Second press");
     }
 }
