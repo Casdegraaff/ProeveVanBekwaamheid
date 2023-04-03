@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class SpawnEmail : MonoBehaviour
 {
+    public GameObject EmailButton;
+
     //Email Gameobject//
     public GameObject Email;
 
@@ -21,5 +23,11 @@ public class SpawnEmail : MonoBehaviour
     public void EmailSpawn()
     {
         Instantiate( Email, Spawnpoint, Quaternion.identity);
+    }
+
+    //Function that turns the button off when clicked//
+    public void ButtonTurnOff()
+    {
+        EmailButton.SetActive(false);   
     }
 }
