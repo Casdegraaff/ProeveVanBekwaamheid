@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 5bab45d10ecc25d42ac715f848a987c2
+  - enabled: 1
+    path: Assets/Scenes/EmailButtons.unity
+    guid: 6a30cf96ef197584daebbea69474cdb4
   m_configObjects: {}
