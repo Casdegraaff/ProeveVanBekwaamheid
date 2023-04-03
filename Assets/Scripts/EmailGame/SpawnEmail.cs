@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SpawnEmail : MonoBehaviour
 {
+    // the button that u use
     public GameObject EmailButton;
 
     // email Gameobject
