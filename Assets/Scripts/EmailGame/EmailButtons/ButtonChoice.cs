@@ -7,7 +7,7 @@ public class ButtonChoice : MonoBehaviour
 {
     public Button RealButton;
     public Button FakeButton;
-
+    public GameObject Mail;
 
     public bool ButtonClicked = false;
 
@@ -58,5 +58,10 @@ public class ButtonChoice : MonoBehaviour
         {
             Debug.Log("Correct");
         }
+    }
+
+    public void HideClick()
+    {
+        Mail.SetActive(false);
     }
 }
