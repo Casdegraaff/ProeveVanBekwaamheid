@@ -9,7 +9,7 @@ public class SpawnEmail2 : MonoBehaviour
     public GameObject EmailButton;
 
     // email Gameobject
-    public GameObject Email;
+    public Sprite Email;
 
     // this is were the spawpoint is
     Vector3 Spawnpoint;
