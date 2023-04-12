@@ -17,15 +17,21 @@ public class Main_menu : MonoBehaviour
         SceneManager.LoadScene("EmailButtons");
     }
 
-    //Quit the game//
+    // Quit the game
     public void Quit()
     {
         Application.Quit();
     }
 
-    //When in game you can go back to main menu//
+    // When in game you can go back to main menu
     public void BackToMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    // Function to go to the option Menu
+    public void OptionsMenu()
+    {
+        SceneManager.LoadScene("OptionMenu");
     }
 }
