@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Fake
   - Real
+  - Game1
+  - Game2
+  - Email
   layers:
   - Default
   - TransparentFX
