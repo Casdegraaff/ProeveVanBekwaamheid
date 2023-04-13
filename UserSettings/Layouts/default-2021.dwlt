@@ -38,7 +38,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
- Development
+Development
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -282,43 +282,9 @@ MonoBehaviour:
     m_SaveData: []
   m_ViewTransforms:
     m_KeySerializationHelper:
-    - {fileID: 3810933284555696672, guid: bf1b7b4089f3b1744aaac364869b049a, type: 2}
-    - {fileID: 0}
     - {fileID: -8897517912417738901, guid: 18cf45d29c649d74e85c2bbe8f48c064, type: 2}
     - {fileID: -2867232592939777135, guid: 38adf5cf424e09643a0130d753e900e9, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: -32
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 76.5
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
     - e00: 1
       e01: 0
       e02: 0
