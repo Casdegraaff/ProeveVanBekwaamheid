@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class HealthManager : MonoBehaviour
 {
     public int maxHealth = 100;
@@ -16,15 +16,21 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-        }
+        
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
+
+    void LoseCondition()
+    {
+        if (currentHealth == 0)
+        {
+            SceneManager.LoadScene("EmailLoseScreen");
+        }
+    }
+
 }
