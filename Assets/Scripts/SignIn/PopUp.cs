@@ -6,32 +6,31 @@ using TMPro;
 
 public class PopUp : MonoBehaviour
 {
-    public TMP_InputField Email;
-    public TMP_InputField Password; 
+    //Is the inputfield for the emailAdress
+    public TMP_InputField InputEmail;
 
+    //Is the inputfield for the Password
+    public TMP_InputField InputPassword; 
+
+    //Email text what wil be filled in in inputfield
     public string EmailText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //Password text what wil be filled in in inputfield
+    public string PasswordText;
 
+    //Warning text when button is Pressed
+    public Text Warning;
+
+    //This function is not build yet
     public void EmailTextCheck()
     {
-        if(EmailText == "")
-        {
-            Debug.Log("IK BEN GESELECTEERD");
-        }
+        EmailText = InputEmail.text;
+        PasswordText = InputPassword.text;
+    }
 
-        else
-        {
-            Debug.Log("IK BEN nog niet geslecteerd");
-        }
+    //The function that spawns the text
+    public void WarningText()
+    {
+        Warning.enabled = true;
     }
 }
