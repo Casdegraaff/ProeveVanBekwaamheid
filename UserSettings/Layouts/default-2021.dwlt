@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 503, y: 492}
   m_MaxSize: {x: 18097, y: 14042}
   vertical: 0
-  controlID: 70
+  controlID: 104
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 71
+  controlID: 57
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 72
+  controlID: 48
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/3D_Assets/Textures/Laptop
+    - Assets/3D_Assets/Textures/Bank
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/3D_Assets/Textures/Laptop
+  - Assets/3D_Assets/Textures/Bank
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\LynnH\OneDrive\!SCHOOL\!EXAMEN\!PROEVE\ProeveVanBekwaamheid
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4a850000
-    m_LastClickedID: 34122
-    m_ExpandedIDs: 000000002c8400002e8400007a840000
+    m_SelectedIDs: 9a5c0000
+    m_LastClickedID: 23706
+    m_ExpandedIDs: 000000003e5b0000d05b0000e65b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000003e5b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4228ffff
-      m_LastClickedID: 0
-      m_ExpandedIDs: c0cfffffdad0ffff
+      m_SelectedIDs: 04d2ffff
+      m_LastClickedID: -11772
+      m_ExpandedIDs: a2f2ffff34fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -772,9 +772,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.6349704, y: 1.2384646, z: 7.056608}
+    m_Target: {x: -3.0070314, y: 0.040628746, z: 2.7146065}
     speed: 2
-    m_Value: {x: -2.6349704, y: 1.2384646, z: 7.056608}
+    m_Value: {x: -3.0070314, y: 0.040628746, z: 2.7146065}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -797,10 +797,10 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 0.98261946
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -821,13 +821,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.055245794, y: 0.9295087, z: -0.3299635, w: -0.15563121}
+    m_Target: {x: -0.15769587, y: -0.8419138, z: 0.37901133, w: -0.35030764}
     speed: 2
-    m_Value: {x: -0.0549783, y: 0.92918205, z: -0.3314178, w: -0.15414408}
+    m_Value: {x: -0.15655407, y: -0.84293914, z: 0.3794729, w: -0.34777132}
   m_Size:
-    m_Target: 0.60675937
+    m_Target: 3.4514925
     speed: 2
-    m_Value: 0.60675937
+    m_Value: 3.6141284
   m_Ortho:
     m_Target: 0
     speed: 2
