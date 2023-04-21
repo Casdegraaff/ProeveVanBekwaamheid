@@ -14,7 +14,7 @@ public class Main_menu : MonoBehaviour
     //Loads the scene in the game//
     public void LoadGame() 
     {
-        SceneManager.LoadScene("EmailButtons");
+        SceneManager.LoadScene("SignInMenu");
     }
 
     // Quit the game
