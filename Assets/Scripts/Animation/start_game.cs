@@ -53,6 +53,6 @@ public class start_game : MonoBehaviour
     //When animation is finsihed it wil go to Game 2
     public void EndQuiz()
     {
-        SceneManager.LoadScene("Main_Menu");
+        SceneManager.LoadScene("QuizGame");
     }
 }
