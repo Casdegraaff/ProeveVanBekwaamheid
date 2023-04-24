@@ -35,10 +35,10 @@ public class start_game : MonoBehaviour
                 }
 
                 //The funciton for the second game checks for tag 2
-                if (hitInfo.collider.gameObject.tag == "Game2")
+                if (hitInfo.collider.gameObject.tag == "Quiz")
                 {
                     Debug.Log("tag");
-                    animator.SetTrigger("Game2");
+                    animator.SetTrigger("Quiz");
                 }
             }
         }
@@ -51,7 +51,7 @@ public class start_game : MonoBehaviour
     }
 
     //When animation is finsihed it wil go to Game 2
-    public void EndGame2()
+    public void EndQuiz()
     {
         SceneManager.LoadScene("Main_Menu");
     }

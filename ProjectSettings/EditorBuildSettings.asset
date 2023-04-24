@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SignInMenu.unity
     guid: e7f15e3cf190f554086ce379130c1883
+  - enabled: 1
+    path: Assets/Scenes/OptionMenu.unity
+    guid: 9acb8cebc5be2bf4dbadabc9fd7bc5b6
+  - enabled: 1
+    path: Assets/Scenes/LivingRoom.unity
+    guid: ff29a66cff16d3547acae414b7da9adf
   m_configObjects: {}
