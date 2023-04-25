@@ -9,6 +9,7 @@ TagManager:
   - Game1
   - Game2
   - Email
+  - Quiz
   layers:
   - Default
   - TransparentFX
