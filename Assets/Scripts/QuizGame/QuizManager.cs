@@ -11,7 +11,6 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
 
-    // Panels in the game
     public GameObject QuizPanel;
     public GameObject GameOverPanel;
 

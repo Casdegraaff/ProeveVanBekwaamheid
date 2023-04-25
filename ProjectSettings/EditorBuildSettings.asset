@@ -20,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LivingRoom.unity
     guid: ff29a66cff16d3547acae414b7da9adf
-  - enabled: 1
-    path: Assets/Scenes/QuizGame.unity
-    guid: 07faa230bda3a144cb35cc26461a3616
   m_configObjects: {}
