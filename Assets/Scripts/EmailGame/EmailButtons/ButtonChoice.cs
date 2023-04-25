@@ -11,6 +11,17 @@ public class ButtonChoice : MonoBehaviour
 
     public bool ButtonClicked = false;
 
+    private HealthManager healthManager;
+
+    private void Awake()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            healthManager = player.GetComponent<HealthManager>();
+        }
+    }
+
     // function for clicking the real button
     public void Real()
     {
@@ -37,12 +48,12 @@ public class ButtonChoice : MonoBehaviour
         if (gameObject.tag == "Real")
         {
             Debug.Log("Correct");
-
         }
 
         if (gameObject.tag == "Fake")
         {
             Debug.Log("Wrong");
+            healthManager.TakeDamage(20);
         }
     }
 
@@ -52,6 +63,7 @@ public class ButtonChoice : MonoBehaviour
         if (gameObject.tag == "Real")
         {
             Debug.Log("Wrong");
+            healthManager.TakeDamage(20);
         }
 
         if (gameObject.tag == "Fake")
