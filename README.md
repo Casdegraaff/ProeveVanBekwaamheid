@@ -13,24 +13,24 @@
 
 ## Geproduceerde game onderdelen
 
-### Cas
-Quiz game:
-willekeurige vraag generator
-eind score
-email game:
-true or false email knoppen
+### Cas  
+Quiz game:  
+willekeurige vraag generator  
+eind score  
+email game:  
+true or false email knoppen  
 
-### Ruben
-algemeen:
-Dialogue systeem
-email game:
-show email knoppen 
-inbox knop
+### Ruben  
+algemeen:  
+Dialogue systeem  
+email game:  
+show email knoppen   
+inbox knop  
 
-### Quinn
-menu:
-clickable monitor systeem
-options menu
+### Quinn  
+menu:  
+clickable monitor systeem  
+options menu  
 -------------
 ## Software
 Engine:
