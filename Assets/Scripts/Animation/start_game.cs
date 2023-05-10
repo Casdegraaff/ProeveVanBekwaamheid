@@ -34,7 +34,7 @@ public class start_game : MonoBehaviour
                     animator.SetTrigger("Email");
                 }
 
-                //The funciton for the second game checks for tag 2
+                //The function for the second game checks for tag 2
                 if (hitInfo.collider.gameObject.tag == "Quiz")
                 {
                     Debug.Log("tag");
@@ -47,10 +47,10 @@ public class start_game : MonoBehaviour
     //When animation is finished it wil go to email game
     public void EndEmail()
     {
-        SceneManager.LoadScene("EmailButtons");
+        SceneManager.LoadScene("EmailGame");
     }
 
-    //When animation is finsihed it wil go to Game 2
+    //When animation is finished it wil go to Game 2
     public void EndQuiz()
     {
         SceneManager.LoadScene("Main_Menu");
