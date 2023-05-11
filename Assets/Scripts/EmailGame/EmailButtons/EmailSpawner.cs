@@ -10,6 +10,11 @@ public class EmailSpawner : MonoBehaviour
     public GameObject email3;
     public GameObject email4;
     public GameObject email5;
+    public GameObject email6;
+    public GameObject email7;
+    public GameObject email8;
+    public GameObject email9;
+    public GameObject email10;
 
     // Start is called before the first frame update
     public void Start()
@@ -40,6 +45,28 @@ public class EmailSpawner : MonoBehaviour
         else if (gameObject.name == "Email5")
         {
             email5.SetActive(true);
+        }
+
+
+        else if (gameObject.name == "Email6")
+        {
+            email6.SetActive(true);
+        }
+        else if (gameObject.name == "Email7")
+        {
+            email7.SetActive(true);
+        }
+        else if (gameObject.name == "Email8")
+        {
+            email8.SetActive(true);
+        }
+        else if (gameObject.name == "Email9")
+        {
+            email9.SetActive(true);
+        }
+        else if (gameObject.name == "Email10")
+        {
+            email10.SetActive(true);
         }
     }
 }
