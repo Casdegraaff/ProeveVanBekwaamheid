@@ -16,7 +16,12 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
-        
+        if (currentHealth == 20)
+        {
+            Debug.Log("You are dead");
+            SceneManager.LoadScene("EmailLoseScreen");
+            
+        }
     }
 
     public void TakeDamage(int damage)
@@ -25,12 +30,6 @@ public class HealthManager : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    void LoseCondition()
-    {
-        if (currentHealth == 0)
-        {
-            SceneManager.LoadScene("EmailLoseScreen");
-        }
-    }
+   
 
 }
