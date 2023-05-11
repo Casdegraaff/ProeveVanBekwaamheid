@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18388158, g: 0.22894128, b: 0.30259925, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -279,6 +279,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.26364812, y: 0.25884786, z: 0.35}
   m_Center: {x: -0.11470497, y: 0.12949474, z: -0.17523618}
+--- !u!114 &421303328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421303323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c6170d7e09f7a458e987be6b6ff9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HighLightColor: {r: 0.53333336, g: 1, b: 1, a: 1}
 --- !u!1001 &598194300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -857,14 +870,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641999505}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.922998, y: -0.22149423, z: -0.11479055, w: 0.2929816}
+  m_LocalPosition: {x: 0.05, y: 2.92, z: -0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 150.66, y: 23.076996, z: 33.106995}
 --- !u!1001 &1881327138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1151,6 +1164,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38000005, y: 0.2920308, z: 0.085581705}
   m_Center: {x: -0.07575924, y: 0.1461364, z: 0.039165605}
+--- !u!114 &2036773153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036773151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c6170d7e09f7a458e987be6b6ff9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HighLightColor: {r: 0.5686275, g: 1, b: 0.85423136, a: 1}
 --- !u!1001 &2042062728
 PrefabInstance:
   m_ObjectHideFlags: 0
