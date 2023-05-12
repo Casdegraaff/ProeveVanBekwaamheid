@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class Options_menu : MonoBehaviour
 {
@@ -19,5 +20,11 @@ public class Options_menu : MonoBehaviour
     public void ToggleFullscreen()
     {
         Screen.fullScreen = !Screen.fullScreen;
+    }
+
+    // To go back to the main menu
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
