@@ -16,7 +16,7 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
-        if (currentHealth == 20)
+        if (currentHealth == 0)
         {
             Debug.Log("You are dead");
             SceneManager.LoadScene("EmailLoseScreen");
