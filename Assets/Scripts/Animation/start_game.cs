@@ -27,32 +27,32 @@ public class start_game : MonoBehaviour
             //If the raycast hit something asks for info
             if (Physics.Raycast(ray, out hitInfo))
             {
-                //The function for the first game checks for tag 1
+                //The function for the first game checks for the tag Email
                 if (hitInfo.collider.gameObject.tag == "Email")
                 {
-                    Debug.Log("tag");
+                    //Trigger that the Email animation is played
                     animator.SetTrigger("Email");
                 }
 
-                //The function for the second game checks for tag 2
+                //The function for the second game checks for the tag Quiz
                 if (hitInfo.collider.gameObject.tag == "Quiz")
                 {
-                    Debug.Log("tag");
+                    //Trigger that the Quiz animation is played
                     animator.SetTrigger("Quiz");
                 }
             }
         }
     }
 
-    //When animation is finished it wil go to email game
+    //Function whe the animation is finished you go to the Email game
     public void EndEmail()
     {
         SceneManager.LoadScene("EmailGame");
     }
 
-    //When animation is finished it wil go to Game 2
+    //Function that when animation is finished you go to the Quiz game
     public void EndQuiz()
     {
-        SceneManager.LoadScene("Main_Menu");
+        SceneManager.LoadScene("Quizgame");
     }
 }
