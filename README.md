@@ -1,14 +1,5 @@
 # ProeveVanBekwaamheid
 
-## Team:
-1. Ruben Dudink
-2. Cas de Graaff
-3. Quinn Croese
-4. Lynn Hiep
-5. Miles Schalkwijk
-6. Sanne Kaat
-7. Mila Verwer
-
 ## Gemeente Amsterdam cybersecurity voorlichtings training
 Een op aanvraag gemaakte cybersecurity training voor het interne team bij de gemeente van Amsterdam.
 
@@ -17,6 +8,15 @@ Wij hebben hiervoor 2 verschillende soorten games gemaakt:
 
 * Een training om je kennis over cybersecurity termen te testen door middel van een quiz
 * Een phishing/scam training waarin je over meerdere emails moet zeggen of ze echt zijn of dat het complete fraude is.
+
+## Team:
+1. Ruben Dudink
+2. Cas de Graaff
+3. Quinn Croese
+4. Lynn Hiep
+5. Miles Schalkwijk
+6. Sanne Kaat
+7. Mila Verwer
 
 ## Software
 Engine:
