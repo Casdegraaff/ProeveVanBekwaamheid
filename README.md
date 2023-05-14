@@ -9,26 +9,33 @@
 6. Sanne Kaat
 7. Mila Verwer
 
-## Het project
+## Gemeente Amsterdam cybersecurity voorlichtings training
+Een op aanvraag gemaakte cybersecurity training voor het interne team bij de gemeente van Amsterdam.
+
+Het idee achter onze training is om de werkers meer inzicht te geven over hoe belangrijk goede cybersecurity is.
+Wij hebben hiervoor 2 verschillende soorten games gemaakt: 
+
+* Een training om je kennis over cybersecurity termen te testen door middel van een quiz
+* Een phishing/scam training waarin je over meerdere emails moet zeggen of ze echt zijn of dat het complete fraude is.
 
 ## Geproduceerde game onderdelen
 
-### Cas  
-Quiz game:  
+## Cas  
+### Quiz game:  
 willekeurige vraag generator  
 eind score  
-email game:  
+### email game:  
 true or false email knoppen  
 
-### Ruben  
-algemeen:  
+## Ruben  
+### algemeen:  
 Dialogue systeem  
-email game:  
+### email game:  
 show email knoppen   
 inbox knop  
 
-### Quinn  
-menu:  
+## Quinn  
+### menu:  
 clickable monitor systeem  
 options menu  
   
