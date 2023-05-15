@@ -44,10 +44,6 @@ overige software:
 
 [Willekeurige vraag generator en eind score](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/QuizGame/QuizManager.cs)   
 
- Email game:    
-
-[true or false email knoppen](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs) 
-
 ### Ruben  
  Algemeen:  
 
@@ -67,6 +63,10 @@ overige software:
 [Main menu en options menu](https://github.com/Casdegraaff/ProeveVanBekwaamheid/tree/Development/Assets/Scripts/MainMenu)
 
 [Inlog scherm](https://github.com/Casdegraaff/ProeveVanBekwaamheid/tree/Development/Assets/Scripts/SignIn)
+
+Email game:    
+
+[true or false email knoppen](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs) 
 
 ## Random quiz vragen door Cas
 
