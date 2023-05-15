@@ -80,5 +80,6 @@ public class ButtonChoice : MonoBehaviour
     public void EndScreen()
     {
         SceneManager.LoadScene("EmailEndScreen");
+        Debug.Log("Ja");
     }
 }
