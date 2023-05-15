@@ -21,7 +21,6 @@ public class EmailSpawner : MonoBehaviour
     {
         Button button = GetComponent<Button>();
         button.onClick.AddListener(OnClick);
-        
     }
 
     public void OnClick()
