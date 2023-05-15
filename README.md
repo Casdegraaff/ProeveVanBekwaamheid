@@ -66,7 +66,7 @@ overige software:
 
 Email game:    
 
-[true or false email knoppen](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs) 
+[true or false email knoppen & game finish](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs) 
 
 ## Random quiz vragen door Cas
 
