@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EmailLoseScreen.unity
     guid: 88b19d75e0ec2584d8ac7be80d0a8ec5
+  - enabled: 1
+    path: Assets/Scenes/QuizGame.unity
+    guid: 07faa230bda3a144cb35cc26461a3616
+  - enabled: 1
+    path: Assets/Scenes/EmailGame.unity
+    guid: 13fbcccff114e1549adb54c57048e4c5
   m_configObjects: {}
