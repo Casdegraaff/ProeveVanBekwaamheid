@@ -79,6 +79,6 @@ public class ButtonChoice : MonoBehaviour
     //Function that goes to the winscreen
     public void EndScreen()
     {
-        SceneManager.LoadScene("WinScreen");
+        SceneManager.LoadScene("EmailEndScreen");
     }
 }
