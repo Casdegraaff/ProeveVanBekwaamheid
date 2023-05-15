@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ButtonChoice : MonoBehaviour
 {
     public Button RealButton;
     public Button FakeButton;
     public GameObject Mail;
+
+    //How many Questions are answerd
+    public int Answers = 0;
 
     private HealthManager healthManager;
     private bool isRealMail;
@@ -24,6 +28,12 @@ public class ButtonChoice : MonoBehaviour
 
         RealButton.onClick.AddListener(CorrectButtonClicked);
         FakeButton.onClick.AddListener(WrongButtonClicked);
+
+        //Function that when you answerd 10 questions it goes to the winscreen
+        if(Answers == 10)
+        {
+            WinScreen();
+        }
     }
     
     // this checks of the email is fake or not, and sees if you choose the correct answer
@@ -34,6 +44,7 @@ public class ButtonChoice : MonoBehaviour
             return;
         }
         WrongChoice();
+        Answers+= 1;
     }
 
     public void WrongButtonClicked()
@@ -43,6 +54,7 @@ public class ButtonChoice : MonoBehaviour
             return;
         }
         WrongChoice();
+        Answers+= 1;
     }
 
     //if the answer is correct this function will play
@@ -62,5 +74,11 @@ public class ButtonChoice : MonoBehaviour
     public void HideClick()
     {
         Mail.SetActive(false);
+    }
+
+    //Function that goes to the winscreen
+    public void WinScreen()
+    {
+        SceneManager.LoadScene("WinScreen");
     }
 }
