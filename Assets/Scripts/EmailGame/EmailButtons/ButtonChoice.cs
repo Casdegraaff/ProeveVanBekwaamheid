@@ -9,69 +9,56 @@ public class ButtonChoice : MonoBehaviour
     public Button FakeButton;
     public GameObject Mail;
 
-    public bool ButtonClicked = false;
-
     private HealthManager healthManager;
+    private bool isRealMail;
 
+    // this function grabs the players object and health, as well as add a listener to see what button is correct
     private void Awake()
     {
+        isRealMail = gameObject.tag == "Real";
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
             healthManager = player.GetComponent<HealthManager>();
         }
-    }
 
-    // function for clicking the real button
-    public void Real()
+        RealButton.onClick.AddListener(CorrectButtonClicked);
+        FakeButton.onClick.AddListener(WrongButtonClicked);
+    }
+    
+    // this checks of the email is fake or not, and sees if you choose the correct answer
+    public void CorrectButtonClicked()
     {
-        if (!ButtonClicked)
-        {
-            RealButton.onClick.AddListener(RealClick);
-            ButtonClicked = true;
+        if(isRealMail){
+            GoodChoice();
+            return;
         }
+        WrongChoice();
     }
 
-    // function for clicking the fake button
-    public void Fake()
+    public void WrongButtonClicked()
     {
-        if (!ButtonClicked)
-        {
-            FakeButton.onClick.AddListener(FakeClick);
-            ButtonClicked = true;
+        if(!isRealMail){
+            GoodChoice();
+            return;
         }
+        WrongChoice();
     }
 
-    // checks the real button based on click
-    private void RealClick()
+    //if the answer is correct this function will play
+    public void GoodChoice()
     {
-        if (gameObject.tag == "Real")
-        {
-            Debug.Log("Correct");
-        }
-
-        if (gameObject.tag == "Fake")
-        {
-            Debug.Log("Wrong");
-            healthManager.TakeDamage(20);
-        }
+        print("CORRECT");
     }
 
-    // checks the fake button based on click
-    private void FakeClick()
+    //  this function reduces health if the wrong choice has been made
+    public void WrongChoice()
     {
-        if (gameObject.tag == "Real")
-        {
-            Debug.Log("Wrong");
-            healthManager.TakeDamage(20);
-        }
-
-        if (gameObject.tag == "Fake")
-        {
-            Debug.Log("Correct");
-        }
+        print("wrong");
+        healthManager.TakeDamage(20);
     }
 
+    //Hides the email when buttons is pressed
     public void HideClick()
     {
         Mail.SetActive(false);

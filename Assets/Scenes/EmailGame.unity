@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 73507300}
   m_Layer: 5
   m_Name: Fake
-  m_TagString: Real
+  m_TagString: Fake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 87452710}
   - component: {fileID: 87452709}
   m_Layer: 6
-  m_Name: Mail6
+  m_Name: Mail6(Fake)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae09a2e8ff668bd45b97957f3667da3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 29bd9184fe38bec4ba75faedba0618dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1121,7 +1121,7 @@ GameObject:
   - component: {fileID: 173067646}
   m_Layer: 5
   m_Name: Real
-  m_TagString: Real
+  m_TagString: Fake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1294,7 +1294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -388, y: 301.8}
+  m_AnchoredPosition: {x: -388, y: 301}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &185626785
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae09a2e8ff668bd45b97957f3667da3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5cdcbb82d14c10a44a130194633a8d44, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1688,7 +1688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae09a2e8ff668bd45b97957f3667da3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4249627dc02a433469c5e895ff942ac2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2004,7 +2004,7 @@ GameObject:
   - component: {fileID: 373655431}
   - component: {fileID: 373655430}
   m_Layer: 5
-  m_Name: Mail7
+  m_Name: Mail7(Fake)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2030,7 +2030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae09a2e8ff668bd45b97957f3667da3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60ffb8076f6f9e245afa55bc13ce645c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5558,7 +5558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae09a2e8ff668bd45b97957f3667da3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 70d042187a381f04ba1078c8ca896b9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5726,7 +5726,7 @@ GameObject:
   - component: {fileID: 1134667232}
   m_Layer: 5
   m_Name: Fake
-  m_TagString: Real
+  m_TagString: Fake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7022,7 +7022,7 @@ GameObject:
   - component: {fileID: 1324685048}
   m_Layer: 5
   m_Name: Real
-  m_TagString: Real
+  m_TagString: Fake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9254,7 +9254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae09a2e8ff668bd45b97957f3667da3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52ec0cc5898fe4a449984cc04dc4f815, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9875,7 +9875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae09a2e8ff668bd45b97957f3667da3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1af6eab23e2e0a440a052a21adcc26b4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
