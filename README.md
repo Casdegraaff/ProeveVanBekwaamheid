@@ -44,23 +44,23 @@ overige software:
 
 [Willekeurige vraag generator en eind score](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/QuizGame/QuizManager.cs)   
 
- email game:    
+ Email game:    
 
 [true or false email knoppen](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs) 
 
 ### Ruben  
- algemeen:  
+ Algemeen:  
 
 [Dialogue systeem](https://github.com/Casdegraaff/ProeveVanBekwaamheid/tree/Development/Assets/Scripts/DialogueScripts)    
 
- email game:  
+ Email game:  
 
 [show email knoppen](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/EmailSpawner.cs)  
 
 [inbox knop](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs)
 
 ### Quinn  
- menu:  
+ Menu:  
 
 [clickable monitor systeem](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/Animation/start_game.cs)
 
