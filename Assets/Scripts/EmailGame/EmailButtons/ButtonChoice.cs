@@ -32,7 +32,7 @@ public class ButtonChoice : MonoBehaviour
         //Function that when you answerd 10 questions it goes to the winscreen
         if(Answers == 10)
         {
-            WinScreen();
+            EndScreen();
         }
     }
     
@@ -77,7 +77,7 @@ public class ButtonChoice : MonoBehaviour
     }
 
     //Function that goes to the winscreen
-    public void WinScreen()
+    public void EndScreen()
     {
         SceneManager.LoadScene("WinScreen");
     }
