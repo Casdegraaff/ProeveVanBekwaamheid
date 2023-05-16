@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EmailGame.unity
     guid: 13fbcccff114e1549adb54c57048e4c5
+  - enabled: 1
+    path: Assets/Scenes/EmailEndScreen.unity
+    guid: 936cb9c6c3c783b4ba63783bed8f2172
   m_configObjects: {}
