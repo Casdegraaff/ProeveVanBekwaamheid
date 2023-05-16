@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 73507300}
   m_Layer: 5
   m_Name: Fake
-  m_TagString: Fake
+  m_TagString: Real
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1324685047}
   FakeButton: {fileID: 73507301}
-  Mail: {fileID: 0}
+  Mail: {fileID: 87452707}
   Answers: 0
 --- !u!114 &73507301
 MonoBehaviour:
@@ -487,6 +487,18 @@ MonoBehaviour:
       - m_Target: {fileID: 73507300}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 73507300}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1035,8 +1047,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 173067646}
-        m_TargetAssemblyTypeName: ChoiceButton, Assembly-CSharp
-        m_MethodName: Real
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 173067646}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: HideClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1060,7 +1084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 173067645}
   FakeButton: {fileID: 1134667233}
-  Mail: {fileID: 0}
+  Mail: {fileID: 373655429}
   Answers: 0
 --- !u!114 &173067647
 MonoBehaviour:
@@ -2402,6 +2426,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 575233982}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &575233982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2416,7 +2452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 575233981}
   FakeButton: {fileID: 1369081569}
-  Mail: {fileID: 0}
+  Mail: {fileID: 909085378}
   Answers: 0
 --- !u!114 &575233983
 MonoBehaviour:
@@ -2813,6 +2849,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 662732835}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &662732835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2827,7 +2875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 662732834}
   FakeButton: {fileID: 1463392930}
-  Mail: {fileID: 0}
+  Mail: {fileID: 248894603}
   Answers: 0
 --- !u!114 &662732836
 MonoBehaviour:
@@ -2943,7 +2991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1839676493}
   FakeButton: {fileID: 666554335}
-  Mail: {fileID: 0}
+  Mail: {fileID: 632202604}
   Answers: 0
 --- !u!114 &666554335
 MonoBehaviour:
@@ -2992,6 +3040,18 @@ MonoBehaviour:
       - m_Target: {fileID: 666554334}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 666554334}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3094,7 +3154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1271868538}
   FakeButton: {fileID: 675725221}
-  Mail: {fileID: 0}
+  Mail: {fileID: 267156127}
   Answers: 0
 --- !u!114 &675725221
 MonoBehaviour:
@@ -3143,6 +3203,18 @@ MonoBehaviour:
       - m_Target: {fileID: 675725220}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 675725220}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3401,6 +3473,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 779220667}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &779220667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3415,7 +3499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 779220666}
   FakeButton: {fileID: 835727935}
-  Mail: {fileID: 0}
+  Mail: {fileID: 1087888911}
   Answers: 0
 --- !u!114 &779220668
 MonoBehaviour:
@@ -3666,7 +3750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 779220666}
   FakeButton: {fileID: 835727935}
-  Mail: {fileID: 0}
+  Mail: {fileID: 1087888911}
   Answers: 0
 --- !u!114 &835727935
 MonoBehaviour:
@@ -3715,6 +3799,18 @@ MonoBehaviour:
       - m_Target: {fileID: 835727934}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 835727934}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4645,7 +4741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 173067645}
   FakeButton: {fileID: 1134667233}
-  Mail: {fileID: 0}
+  Mail: {fileID: 373655429}
   Answers: 0
 --- !u!114 &1134667233
 MonoBehaviour:
@@ -4692,8 +4788,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1134667232}
-        m_TargetAssemblyTypeName: ChoiceButton, Assembly-CSharp
-        m_MethodName: Fake
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1134667232}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: HideClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5462,6 +5570,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1271868539}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1271868539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5476,7 +5596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1271868538}
   FakeButton: {fileID: 675725221}
-  Mail: {fileID: 0}
+  Mail: {fileID: 267156127}
   Answers: 0
 --- !u!114 &1271868540
 MonoBehaviour:
@@ -5599,7 +5719,7 @@ GameObject:
   - component: {fileID: 1324685048}
   m_Layer: 5
   m_Name: Real
-  m_TagString: Fake
+  m_TagString: Real
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5660,6 +5780,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1324685048}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1324685048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5674,7 +5806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1324685047}
   FakeButton: {fileID: 73507301}
-  Mail: {fileID: 0}
+  Mail: {fileID: 87452707}
   Answers: 0
 --- !u!114 &1324685049
 MonoBehaviour:
@@ -5790,7 +5922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 575233981}
   FakeButton: {fileID: 1369081569}
-  Mail: {fileID: 0}
+  Mail: {fileID: 909085378}
   Answers: 0
 --- !u!114 &1369081569
 MonoBehaviour:
@@ -5839,6 +5971,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1369081568}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1369081568}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5962,6 +6106,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1424558443}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1424558443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5976,7 +6132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1424558442}
   FakeButton: {fileID: 1986455266}
-  Mail: {fileID: 0}
+  Mail: {fileID: 505002788}
   Answers: 0
 --- !u!114 &1424558444
 MonoBehaviour:
@@ -6362,7 +6518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 662732834}
   FakeButton: {fileID: 1463392930}
-  Mail: {fileID: 0}
+  Mail: {fileID: 248894603}
   Answers: 0
 --- !u!114 &1463392930
 MonoBehaviour:
@@ -6411,6 +6567,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1463392929}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1463392929}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6534,6 +6702,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1526403563}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1526403563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6548,7 +6728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1526403562}
   FakeButton: {fileID: 2105784104}
-  Mail: {fileID: 0}
+  Mail: {fileID: 1753464366}
   Answers: 0
 --- !u!114 &1526403564
 MonoBehaviour:
@@ -6772,7 +6952,6 @@ GameObject:
   - component: {fileID: 1713690552}
   - component: {fileID: 1713690554}
   - component: {fileID: 1713690553}
-  - component: {fileID: 1713690555}
   m_Layer: 6
   m_Name: Mail1 (Real)
   m_TagString: Untagged
@@ -6840,22 +7019,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713690551}
   m_CullTransparentMesh: 1
---- !u!114 &1713690555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713690551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1718984098}
-  FakeButton: {fileID: 2050576831}
-  Mail: {fileID: 1713690551}
-  Answers: 0
 --- !u!1 &1715836919
 GameObject:
   m_ObjectHideFlags: 0
@@ -7024,9 +7187,10 @@ GameObject:
   - component: {fileID: 1718984101}
   - component: {fileID: 1718984100}
   - component: {fileID: 1718984098}
+  - component: {fileID: 1718984103}
   m_Layer: 5
   m_Name: Real
-  m_TagString: Fake
+  m_TagString: Real
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7075,9 +7239,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1713690555}
+      - m_Target: {fileID: 1718984103}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1718984103}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7146,6 +7322,124 @@ RectTransform:
   m_AnchoredPosition: {x: -6.5000114, y: 59.399963}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1718984103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718984097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 1718984098}
+  FakeButton: {fileID: 2050576831}
+  Mail: {fileID: 1713690551}
+  Answers: 0
+--- !u!1 &1743771584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743771585}
+  - component: {fileID: 1743771588}
+  - component: {fileID: 1743771587}
+  - component: {fileID: 1743771586}
+  m_Layer: 5
+  m_Name: DialogueBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1743771585
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743771584}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.9104104, y: 2.9104104, z: 2.9104104}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 887795246}
+  - {fileID: 380820026}
+  - {fileID: 1022356524}
+  m_Father: {fileID: 1830670755}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -388.7689}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1743771586
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743771584}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 18cf45d29c649d74e85c2bbe8f48c064, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1743771587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743771584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2fa70301715fd3b4794bba42885f2701, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1743771588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743771584}
+  m_CullTransparentMesh: 1
+=======
+
 --- !u!1 &1753464366
 GameObject:
   m_ObjectHideFlags: 0
@@ -7853,6 +8147,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1839676494}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1839676494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7867,7 +8173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1839676493}
   FakeButton: {fileID: 666554335}
-  Mail: {fileID: 0}
+  Mail: {fileID: 632202604}
   Answers: 0
 --- !u!114 &1839676495
 MonoBehaviour:
@@ -8180,7 +8486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1424558442}
   FakeButton: {fileID: 1986455266}
-  Mail: {fileID: 0}
+  Mail: {fileID: 505002788}
   Answers: 0
 --- !u!114 &1986455266
 MonoBehaviour:
@@ -8229,6 +8535,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1986455265}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1986455265}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8579,9 +8897,10 @@ GameObject:
   - component: {fileID: 2050576833}
   - component: {fileID: 2050576832}
   - component: {fileID: 2050576831}
+  - component: {fileID: 2050576834}
   m_Layer: 5
   m_Name: Fake
-  m_TagString: Fake
+  m_TagString: Real
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8651,7 +8970,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1713690555}
+      - m_Target: {fileID: 2050576834}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: WrongButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2050576834}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -8701,6 +9032,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050576828}
   m_CullTransparentMesh: 1
+--- !u!114 &2050576834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050576828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 1718984098}
+  FakeButton: {fileID: 2050576831}
+  Mail: {fileID: 1713690551}
+  Answers: 0
 --- !u!1 &2098073352
 GameObject:
   m_ObjectHideFlags: 0
@@ -8891,7 +9238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealButton: {fileID: 1526403562}
   FakeButton: {fileID: 2105784104}
-  Mail: {fileID: 0}
+  Mail: {fileID: 1753464366}
   Answers: 0
 --- !u!114 &2105784104
 MonoBehaviour:
@@ -8940,6 +9287,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2105784103}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2105784103}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: GoodChoice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
