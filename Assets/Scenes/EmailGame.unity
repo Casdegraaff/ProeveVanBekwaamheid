@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -395,7 +395,6 @@ GameObject:
   - component: {fileID: 73507303}
   - component: {fileID: 73507302}
   - component: {fileID: 73507301}
-  - component: {fileID: 73507300}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -424,22 +423,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24.500122, y: 59.299957}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &73507300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73507298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1324685047}
-  FakeButton: {fileID: 73507301}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &73507301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,7 +467,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 73507300}
+      - m_Target: {fileID: 87452711}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -545,6 +528,7 @@ GameObject:
   - component: {fileID: 87452708}
   - component: {fileID: 87452710}
   - component: {fileID: 87452709}
+  - component: {fileID: 87452711}
   m_Layer: 6
   m_Name: Mail6(Real)
   m_TagString: Untagged
@@ -612,6 +596,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87452707}
   m_CullTransparentMesh: 1
+--- !u!114 &87452711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87452707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 1324685047}
+  FakeButton: {fileID: 73507301}
+  Mail: {fileID: 87452707}
 --- !u!1 &92438447
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +981,6 @@ GameObject:
   - component: {fileID: 173067648}
   - component: {fileID: 173067647}
   - component: {fileID: 173067645}
-  - component: {fileID: 173067646}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -1034,9 +1032,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 173067646}
-        m_TargetAssemblyTypeName: ChoiceButton, Assembly-CSharp
-        m_MethodName: Real
+      - m_Target: {fileID: 373655433}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: HideClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1046,22 +1044,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &173067646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173067644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 173067645}
-  FakeButton: {fileID: 1134667233}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &173067647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,6 +1405,7 @@ GameObject:
   - component: {fileID: 248894604}
   - component: {fileID: 248894606}
   - component: {fileID: 248894605}
+  - component: {fileID: 248894607}
   m_Layer: 5
   m_Name: Mail2 (Fake)
   m_TagString: Untagged
@@ -1490,6 +1473,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248894603}
   m_CullTransparentMesh: 1
+--- !u!114 &248894607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248894603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 662732834}
+  FakeButton: {fileID: 1463392930}
+  Mail: {fileID: 248894603}
 --- !u!1 &267156127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,6 +1499,7 @@ GameObject:
   - component: {fileID: 267156128}
   - component: {fileID: 267156130}
   - component: {fileID: 267156129}
+  - component: {fileID: 267156131}
   m_Layer: 5
   m_Name: Mail4 (Fake)
   m_TagString: Untagged
@@ -1568,6 +1567,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267156127}
   m_CullTransparentMesh: 1
+--- !u!114 &267156131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267156127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 1271868538}
+  FakeButton: {fileID: 675725221}
+  Mail: {fileID: 267156127}
 --- !u!1 &354983077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,6 +1728,7 @@ GameObject:
   - component: {fileID: 373655432}
   - component: {fileID: 373655431}
   - component: {fileID: 373655430}
+  - component: {fileID: 373655433}
   m_Layer: 5
   m_Name: Mail7(Real)
   m_TagString: Untagged
@@ -1781,6 +1796,21 @@ RectTransform:
   m_AnchoredPosition: {x: 26.999954, y: 37}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &373655433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373655429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 173067645}
+  FakeButton: {fileID: 1134667233}
+  Mail: {fileID: 373655429}
 --- !u!1 &405858494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,6 +2111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 493283717}
+  - component: {fileID: 493283718}
   m_Layer: 0
   m_Name: All_Emails
   m_TagString: Untagged
@@ -2113,6 +2144,18 @@ Transform:
   m_Father: {fileID: 1830670755}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &493283718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493283716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69221a1c4bfb8f2478d1a53496665363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &496984494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,6 +2302,7 @@ GameObject:
   - component: {fileID: 505002789}
   - component: {fileID: 505002791}
   - component: {fileID: 505002790}
+  - component: {fileID: 505002792}
   m_Layer: 5
   m_Name: Mail8(Fake)
   m_TagString: Untagged
@@ -2326,6 +2370,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505002788}
   m_CullTransparentMesh: 1
+--- !u!114 &505002792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505002788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 1424558442}
+  FakeButton: {fileID: 1986455266}
+  Mail: {fileID: 505002788}
 --- !u!1 &575233980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,7 +2397,6 @@ GameObject:
   - component: {fileID: 575233984}
   - component: {fileID: 575233983}
   - component: {fileID: 575233981}
-  - component: {fileID: 575233982}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -2390,7 +2448,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 575233982}
+      - m_Target: {fileID: 909085382}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -2402,22 +2460,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &575233982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575233980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 575233981}
-  FakeButton: {fileID: 1369081569}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &575233983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2670,6 +2712,7 @@ GameObject:
   - component: {fileID: 632202605}
   - component: {fileID: 632202607}
   - component: {fileID: 632202606}
+  - component: {fileID: 632202608}
   m_Layer: 5
   m_Name: Mail9(Real)
   m_TagString: Untagged
@@ -2737,6 +2780,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632202604}
   m_CullTransparentMesh: 1
+--- !u!114 &632202608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632202604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 1839676493}
+  FakeButton: {fileID: 666554335}
+  Mail: {fileID: 632202604}
 --- !u!1 &662732833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,7 +2807,6 @@ GameObject:
   - component: {fileID: 662732837}
   - component: {fileID: 662732836}
   - component: {fileID: 662732834}
-  - component: {fileID: 662732835}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -2801,7 +2858,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 662732835}
+      - m_Target: {fileID: 248894607}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -2813,22 +2870,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &662732835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662732833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 662732834}
-  FakeButton: {fileID: 1463392930}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &662732836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2900,7 +2941,6 @@ GameObject:
   - component: {fileID: 666554337}
   - component: {fileID: 666554336}
   - component: {fileID: 666554335}
-  - component: {fileID: 666554334}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -2929,22 +2969,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24.500122, y: 59.299957}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &666554334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666554332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1839676493}
-  FakeButton: {fileID: 666554335}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &666554335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2989,7 +3013,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 666554334}
+      - m_Target: {fileID: 632202608}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -3051,7 +3075,6 @@ GameObject:
   - component: {fileID: 675725223}
   - component: {fileID: 675725222}
   - component: {fileID: 675725221}
-  - component: {fileID: 675725220}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -3080,22 +3103,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24.49997, y: 59.299957}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &675725220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675725218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1271868538}
-  FakeButton: {fileID: 675725221}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &675725221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3140,7 +3147,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 675725220}
+      - m_Target: {fileID: 267156131}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -3337,7 +3344,6 @@ GameObject:
   - component: {fileID: 779220669}
   - component: {fileID: 779220668}
   - component: {fileID: 779220666}
-  - component: {fileID: 779220667}
   m_Layer: 5
   m_Name: 'Real '
   m_TagString: Real
@@ -3389,7 +3395,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 779220667}
+      - m_Target: {fileID: 1087888915}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -3401,22 +3407,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &779220667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779220665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 779220666}
-  FakeButton: {fileID: 835727935}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &779220668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3623,7 +3613,6 @@ GameObject:
   - component: {fileID: 835727937}
   - component: {fileID: 835727936}
   - component: {fileID: 835727935}
-  - component: {fileID: 835727934}
   m_Layer: 5
   m_Name: 'Fake '
   m_TagString: Real
@@ -3652,22 +3641,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24.500061, y: 59.299988}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &835727934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835727932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 779220666}
-  FakeButton: {fileID: 835727935}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &835727935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3712,7 +3685,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 835727934}
+      - m_Target: {fileID: 1087888915}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -4091,6 +4064,7 @@ GameObject:
   - component: {fileID: 909085379}
   - component: {fileID: 909085381}
   - component: {fileID: 909085380}
+  - component: {fileID: 909085382}
   m_Layer: 5
   m_Name: Mail10(Real)
   m_TagString: Untagged
@@ -4158,6 +4132,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909085378}
   m_CullTransparentMesh: 1
+--- !u!114 &909085382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909085378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 575233981}
+  FakeButton: {fileID: 1369081569}
+  Mail: {fileID: 909085378}
 --- !u!1 &911742656
 GameObject:
   m_ObjectHideFlags: 0
@@ -4388,6 +4377,7 @@ GameObject:
   - component: {fileID: 1087888912}
   - component: {fileID: 1087888914}
   - component: {fileID: 1087888913}
+  - component: {fileID: 1087888915}
   m_Layer: 5
   m_Name: Mail3 (Real)
   m_TagString: Untagged
@@ -4455,6 +4445,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087888911}
   m_CullTransparentMesh: 1
+--- !u!114 &1087888915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087888911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 779220666}
+  FakeButton: {fileID: 835727935}
+  Mail: {fileID: 1087888911}
 --- !u!1 &1089212531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4602,7 +4607,6 @@ GameObject:
   - component: {fileID: 1134667235}
   - component: {fileID: 1134667234}
   - component: {fileID: 1134667233}
-  - component: {fileID: 1134667232}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -4631,22 +4635,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24.500122, y: 59.299957}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1134667232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134667230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 173067645}
-  FakeButton: {fileID: 1134667233}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &1134667233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4691,9 +4679,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1134667232}
-        m_TargetAssemblyTypeName: ChoiceButton, Assembly-CSharp
-        m_MethodName: Fake
+      - m_Target: {fileID: 373655433}
+        m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
+        m_MethodName: HideClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5398,7 +5386,6 @@ GameObject:
   - component: {fileID: 1271868541}
   - component: {fileID: 1271868540}
   - component: {fileID: 1271868538}
-  - component: {fileID: 1271868539}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -5450,7 +5437,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1271868539}
+      - m_Target: {fileID: 267156131}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -5462,22 +5449,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1271868539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271868537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1271868538}
-  FakeButton: {fileID: 675725221}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &1271868540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5596,7 +5567,6 @@ GameObject:
   - component: {fileID: 1324685050}
   - component: {fileID: 1324685049}
   - component: {fileID: 1324685047}
-  - component: {fileID: 1324685048}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -5648,7 +5618,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1324685048}
+      - m_Target: {fileID: 87452711}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -5660,22 +5630,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1324685048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324685046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1324685047}
-  FakeButton: {fileID: 73507301}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &1324685049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5747,7 +5701,6 @@ GameObject:
   - component: {fileID: 1369081571}
   - component: {fileID: 1369081570}
   - component: {fileID: 1369081569}
-  - component: {fileID: 1369081568}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -5776,22 +5729,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24.500122, y: 59.299957}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1369081568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369081566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 575233981}
-  FakeButton: {fileID: 1369081569}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &1369081569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5836,7 +5773,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369081568}
+      - m_Target: {fileID: 909085382}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -5898,7 +5835,6 @@ GameObject:
   - component: {fileID: 1424558445}
   - component: {fileID: 1424558444}
   - component: {fileID: 1424558442}
-  - component: {fileID: 1424558443}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -5950,7 +5886,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1424558443}
+      - m_Target: {fileID: 505002792}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -5962,22 +5898,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1424558443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424558441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1424558442}
-  FakeButton: {fileID: 1986455266}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &1424558444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6319,7 +6239,6 @@ GameObject:
   - component: {fileID: 1463392932}
   - component: {fileID: 1463392931}
   - component: {fileID: 1463392930}
-  - component: {fileID: 1463392929}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -6348,22 +6267,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24.499973, y: 59.300003}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1463392929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463392927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 662732834}
-  FakeButton: {fileID: 1463392930}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &1463392930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6408,7 +6311,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1463392929}
+      - m_Target: {fileID: 248894607}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -6470,7 +6373,6 @@ GameObject:
   - component: {fileID: 1526403565}
   - component: {fileID: 1526403564}
   - component: {fileID: 1526403562}
-  - component: {fileID: 1526403563}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -6522,7 +6424,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1526403563}
+      - m_Target: {fileID: 1753464370}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -6534,22 +6436,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1526403563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526403561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1526403562}
-  FakeButton: {fileID: 2105784104}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &1526403564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6855,7 +6741,6 @@ MonoBehaviour:
   RealButton: {fileID: 1718984098}
   FakeButton: {fileID: 2050576831}
   Mail: {fileID: 1713690551}
-  Answers: 0
 --- !u!1 &1715836919
 GameObject:
   m_ObjectHideFlags: 0
@@ -7157,6 +7042,7 @@ GameObject:
   - component: {fileID: 1753464367}
   - component: {fileID: 1753464369}
   - component: {fileID: 1753464368}
+  - component: {fileID: 1753464370}
   m_Layer: 5
   m_Name: Mail5 (Fake)
   m_TagString: Untagged
@@ -7224,6 +7110,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753464366}
   m_CullTransparentMesh: 1
+--- !u!114 &1753464370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753464366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RealButton: {fileID: 1526403562}
+  FakeButton: {fileID: 2105784104}
+  Mail: {fileID: 1753464366}
 --- !u!1 &1773220450
 GameObject:
   m_ObjectHideFlags: 0
@@ -7789,7 +7690,6 @@ GameObject:
   - component: {fileID: 1839676496}
   - component: {fileID: 1839676495}
   - component: {fileID: 1839676493}
-  - component: {fileID: 1839676494}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -7841,7 +7741,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1839676494}
+      - m_Target: {fileID: 632202608}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -7853,22 +7753,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1839676494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839676492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1839676493}
-  FakeButton: {fileID: 666554335}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &1839676495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8137,7 +8021,6 @@ GameObject:
   - component: {fileID: 1986455268}
   - component: {fileID: 1986455267}
   - component: {fileID: 1986455266}
-  - component: {fileID: 1986455265}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -8166,22 +8049,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24.500122, y: 59.299957}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1986455265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986455263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1424558442}
-  FakeButton: {fileID: 1986455266}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &1986455266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8226,7 +8093,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1986455265}
+      - m_Target: {fileID: 505002792}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1
@@ -8848,7 +8715,6 @@ GameObject:
   - component: {fileID: 2105784106}
   - component: {fileID: 2105784105}
   - component: {fileID: 2105784104}
-  - component: {fileID: 2105784103}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -8877,22 +8743,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24.49997, y: 59.299957}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2105784103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105784101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RealButton: {fileID: 1526403562}
-  FakeButton: {fileID: 2105784104}
-  Mail: {fileID: 0}
-  Answers: 0
 --- !u!114 &2105784104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8937,7 +8787,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2105784103}
+      - m_Target: {fileID: 1753464370}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
         m_Mode: 1

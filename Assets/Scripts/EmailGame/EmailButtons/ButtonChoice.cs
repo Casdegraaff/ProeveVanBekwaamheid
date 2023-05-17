@@ -8,9 +8,7 @@ public class ButtonChoice : MonoBehaviour
     public Button RealButton;
     public Button FakeButton;
     public GameObject Mail;
-    public static AnswerManger Instance;
-    //How many Questions are answerd
-    public int Answers = 0;
+    public static AnswerManager Instance;
 
     private HealthManager healthManager;
     private bool isRealMail;
@@ -38,31 +36,29 @@ public class ButtonChoice : MonoBehaviour
             return;
         }
         GoodChoice();
-        WrongChoice();
-        Answers+= 1;
     }
 
     public void WrongButtonClicked()
     {
-        AnswerManger.Instance.IncreaseScore(1);
+        
         if(!isRealMail){
             GoodChoice();
             return;
         }
         WrongChoice();
-        Answers+= 1;
     }
 
     //if the answer is correct this function will play
     public void GoodChoice()
     {
-        AnswerManger.Instance.IncreaseScore(1);
+        AnswerManager.Instance.IncreaseScore(1);
         print("CORRECT");
     }
 
     //  this function reduces health if the wrong choice has been made
     public void WrongChoice()
     {
+        AnswerManager.Instance.IncreaseScore(1);
         print("wrong");
         healthManager.TakeDamage(20);
     }
