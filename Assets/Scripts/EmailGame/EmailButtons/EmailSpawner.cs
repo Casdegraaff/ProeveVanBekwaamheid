@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EmailSpawner : MonoBehaviour
 {
+    //The email list
     public GameObject email1;
     public GameObject email2;
     public GameObject email3;
@@ -16,8 +17,7 @@ public class EmailSpawner : MonoBehaviour
     public GameObject email9;
     public GameObject email10;
 
-    public GameObject EmailOff;
-
+    //Checked if the email was clicked
     bool WasClicked = false;
 
     // Start is called before the first frame update
@@ -27,6 +27,7 @@ public class EmailSpawner : MonoBehaviour
         button.onClick.AddListener(OnClick);
     }
 
+    //Function that spawns the email + checks if it was clicked
     public void OnClick()
     {
         if (gameObject.name == "Email1")
