@@ -11,7 +11,7 @@ public class ButtonChoice : MonoBehaviour
     public GameObject Mail;
 
     //How many Questions are answerd
-    public int Answers;
+    public int Answers = 0;
 
     private HealthManager healthManager;
     private bool isRealMail;
@@ -44,6 +44,7 @@ public class ButtonChoice : MonoBehaviour
             return;
         }
         WrongChoice();
+        Answers+= 1;
     }
 
     public void WrongButtonClicked()
@@ -53,19 +54,18 @@ public class ButtonChoice : MonoBehaviour
             return;
         }
         WrongChoice();
+        Answers+= 1;
     }
 
     //if the answer is correct this function will play
     public void GoodChoice()
     {
-        Answers+= 1;
         print("CORRECT");
     }
 
     //  this function reduces health if the wrong choice has been made
     public void WrongChoice()
     {
-        Answers+= 1;
         print("wrong");
         healthManager.TakeDamage(20);
     }
