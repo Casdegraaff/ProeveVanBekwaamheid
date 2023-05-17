@@ -5,12 +5,18 @@ using UnityEngine.UI;
 
 public class ButtonChoice : MonoBehaviour
 {
+    //The buttons and mail
     public Button CorrectButton;
     public Button IncorrectButton;
     public GameObject Mail;
+
+    //Amount of answered questions
     public static AnswerManager Instance;
 
+    //The manager for the healthbar
     private HealthManager healthManager;
+
+    //Check if the email is real
     private bool isRealMail;
 
     // this function grabs the players object and health, as well as add a listener to see what button is correct
@@ -31,7 +37,6 @@ public class ButtonChoice : MonoBehaviour
     // this checks of the email is fake or not, and sees if you choose the correct answer
     public void CorrectButtonClicked()
     {
-        print("here2");
         if(isRealMail){
             GoodChoice();
             return;
@@ -41,7 +46,6 @@ public class ButtonChoice : MonoBehaviour
 
     public void WrongButtonClicked()
     {
-        print("here");
         if(!isRealMail){
             WrongChoice();
             return;
