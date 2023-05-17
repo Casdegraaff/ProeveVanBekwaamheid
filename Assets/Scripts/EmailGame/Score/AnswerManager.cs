@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AnswerManger : MonoBehaviour
+public class AnswerManager : MonoBehaviour
 {
-    public static AnswerManger Instance { get; private set; }
+    //Here is the value saved
+    public static AnswerManager Instance { get; private set; }
  
+    //Score virable
     public float Score { get; private set; }
     private void Awake() 
     {
@@ -15,14 +17,14 @@ public class AnswerManger : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(Score);
-
+        //Function when the score hits 10 answers you go to end screen 
         if(Score == 10)
         {
             SceneManager.LoadScene("EmailEndScreen");
         }
     }
 
+    //Function that increases the score by the amount
     public void IncreaseScore(float amount)
     {
         Score += amount;
