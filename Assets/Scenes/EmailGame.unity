@@ -279,6 +279,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 0}
 --- !u!1 &35500763
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,8 +609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 1324685047}
-  FakeButton: {fileID: 73507301}
+  CorrectButton: {fileID: 1324685047}
+  IncorrectButton: {fileID: 73507301}
   Mail: {fileID: 87452707}
 --- !u!1 &92438447
 GameObject:
@@ -1259,6 +1260,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 0}
 --- !u!1 &190859609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,8 +1487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 662732834}
-  FakeButton: {fileID: 1463392930}
+  CorrectButton: {fileID: 1463392930}
+  IncorrectButton: {fileID: 662732834}
   Mail: {fileID: 248894603}
 --- !u!1 &267156127
 GameObject:
@@ -1579,8 +1581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 1271868538}
-  FakeButton: {fileID: 675725221}
+  CorrectButton: {fileID: 675725221}
+  IncorrectButton: {fileID: 1271868538}
   Mail: {fileID: 267156127}
 --- !u!1 &354983077
 GameObject:
@@ -1808,8 +1810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 173067645}
-  FakeButton: {fileID: 1134667233}
+  CorrectButton: {fileID: 173067645}
+  IncorrectButton: {fileID: 1134667233}
   Mail: {fileID: 373655429}
 --- !u!1 &405858494
 GameObject:
@@ -1873,6 +1875,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 0}
 --- !u!114 &405858497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2382,8 +2385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 1424558442}
-  FakeButton: {fileID: 1986455266}
+  CorrectButton: {fileID: 1986455266}
+  IncorrectButton: {fileID: 1424558442}
   Mail: {fileID: 505002788}
 --- !u!1 &575233980
 GameObject:
@@ -2792,8 +2795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 1839676493}
-  FakeButton: {fileID: 666554335}
+  CorrectButton: {fileID: 1839676493}
+  IncorrectButton: {fileID: 666554335}
   Mail: {fileID: 632202604}
 --- !u!1 &662732833
 GameObject:
@@ -3077,7 +3080,7 @@ GameObject:
   - component: {fileID: 675725221}
   m_Layer: 5
   m_Name: Fake
-  m_TagString: Real
+  m_TagString: Fake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3891,6 +3894,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 0}
 --- !u!1 &873179975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4144,8 +4148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 575233981}
-  FakeButton: {fileID: 1369081569}
+  CorrectButton: {fileID: 575233981}
+  IncorrectButton: {fileID: 1369081569}
   Mail: {fileID: 909085378}
 --- !u!1 &911742656
 GameObject:
@@ -4457,8 +4461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 779220666}
-  FakeButton: {fileID: 835727935}
+  CorrectButton: {fileID: 779220666}
+  IncorrectButton: {fileID: 835727935}
   Mail: {fileID: 1087888911}
 --- !u!1 &1089212531
 GameObject:
@@ -5061,6 +5065,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 0}
 --- !u!114 &1176551054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5388,7 +5393,7 @@ GameObject:
   - component: {fileID: 1271868538}
   m_Layer: 5
   m_Name: Real
-  m_TagString: Real
+  m_TagString: Fake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6738,8 +6743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 1718984098}
-  FakeButton: {fileID: 2050576831}
+  CorrectButton: {fileID: 1718984098}
+  IncorrectButton: {fileID: 2050576831}
   Mail: {fileID: 1713690551}
 --- !u!1 &1715836919
 GameObject:
@@ -6897,6 +6902,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 0}
 --- !u!1 &1718984097
 GameObject:
   m_ObjectHideFlags: 0
@@ -7122,8 +7128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aaa0eebc8f44ff488a1779d8b59c586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RealButton: {fileID: 1526403562}
-  FakeButton: {fileID: 2105784104}
+  CorrectButton: {fileID: 2105784104}
+  IncorrectButton: {fileID: 1526403562}
   Mail: {fileID: 1753464366}
 --- !u!1 &1773220450
 GameObject:
@@ -7187,6 +7193,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 0}
 --- !u!114 &1773220453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7343,6 +7350,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 0}
 --- !u!114 &1822178104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7915,6 +7923,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 0}
 --- !u!114 &1937136387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8239,6 +8248,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2006563478}
+        m_TargetAssemblyTypeName: EmailSpawner, Assembly-CSharp
+        m_MethodName: ButtonOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2006563476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8299,6 +8320,7 @@ MonoBehaviour:
   email8: {fileID: 505002788}
   email9: {fileID: 632202604}
   email10: {fileID: 909085378}
+  EmailOff: {fileID: 2006563472}
 --- !u!1 &2036564142
 GameObject:
   m_ObjectHideFlags: 0
