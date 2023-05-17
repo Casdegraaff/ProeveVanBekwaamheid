@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class AnswerManager : MonoBehaviour
 {
-    //Here is the value saved
+    //Here is the saved value
     public static AnswerManager Instance { get; private set; }
  
-    //Score virable
+    //Score variable
     public float Score { get; private set; }
     private void Awake() 
     {
@@ -24,7 +24,7 @@ public class AnswerManager : MonoBehaviour
         }
     }
 
-    //Function that increases the score by the amount
+    //Function that increases the score by the amount you set
     public void IncreaseScore(float amount)
     {
         Score += amount;

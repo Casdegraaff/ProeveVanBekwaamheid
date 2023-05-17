@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EmailSpawner : MonoBehaviour
 {
+    //The email list
     public GameObject email1;
     public GameObject email2;
     public GameObject email3;
@@ -16,6 +17,9 @@ public class EmailSpawner : MonoBehaviour
     public GameObject email9;
     public GameObject email10;
 
+    //Checked if the email was clicked
+    bool WasClicked = false;
+
     // Start is called before the first frame update
     public void Start()
     {
@@ -23,49 +27,106 @@ public class EmailSpawner : MonoBehaviour
         button.onClick.AddListener(OnClick);
     }
 
+    //Function that spawns the email + checks if it was clicked
     public void OnClick()
     {
         if (gameObject.name == "Email1")
         {
-            email1.SetActive(true);
-        }
-        else if (gameObject.name == "Email2")
-        {
-            email2.SetActive(true);
-        }
-        else if (gameObject.name == "Email3")
-        {
-            email3.SetActive(true);
-        }
-        else if (gameObject.name == "Email4")
-        {
-            email4.SetActive(true);
-        }
-        else if (gameObject.name == "Email5")
-        {
-            email5.SetActive(true);
+            if(!WasClicked)
+            {
+                email1.SetActive(true);
+                WasClicked = true;
+            }
         }
 
+        if (gameObject.name == "Email1")
+        {
+            if(!WasClicked)
+            {
+                email1.SetActive(true);
+                WasClicked = true;
+            }
+        }
 
-        else if (gameObject.name == "Email6")
+        if (gameObject.name == "Email2")
         {
-            email6.SetActive(true);
+            if(!WasClicked)
+            {
+                email2.SetActive(true);
+                WasClicked = true;
+            }
         }
-        else if (gameObject.name == "Email7")
+
+        if (gameObject.name == "Email3")
         {
-            email7.SetActive(true);
+            if(!WasClicked)
+            {
+                email3.SetActive(true);
+                WasClicked = true;
+            }
         }
-        else if (gameObject.name == "Email8")
+
+        if (gameObject.name == "Email4")
         {
-            email8.SetActive(true);
+            if(!WasClicked)
+            {
+                email4.SetActive(true);
+                WasClicked = true;
+            }
         }
-        else if (gameObject.name == "Email9")
+
+        if (gameObject.name == "Email5")
         {
-            email9.SetActive(true);
+            if(!WasClicked)
+            {
+                email5.SetActive(true);
+                WasClicked = true;
+            }
         }
-        else if (gameObject.name == "Email10")
+
+        if (gameObject.name == "Email6")
         {
-            email10.SetActive(true);
+            if(!WasClicked)
+            {
+                email6.SetActive(true);
+                WasClicked = true;
+            }
+        }
+
+        if (gameObject.name == "Email7")
+        {
+            if(!WasClicked)
+            {
+                email7.SetActive(true);
+                WasClicked = true;
+            }
+        }
+
+        if (gameObject.name == "Email8")
+        {
+            if(!WasClicked)
+            {
+                email8.SetActive(true);
+                WasClicked = true;
+            }
+        }
+
+        if (gameObject.name == "Email9")
+        {
+            if(!WasClicked)
+            {
+                email9.SetActive(true);
+                WasClicked = true;
+            }
+        }
+
+        if (gameObject.name == "Email10")
+        {
+            if(!WasClicked)
+            {
+                email10.SetActive(true);
+                WasClicked = true;
+            }
         }
     }
 }
