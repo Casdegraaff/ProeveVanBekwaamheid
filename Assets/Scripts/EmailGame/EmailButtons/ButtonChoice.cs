@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class ButtonChoice : MonoBehaviour
 {
@@ -10,8 +9,7 @@ public class ButtonChoice : MonoBehaviour
     public Button FakeButton;
     public GameObject Mail;
 
-    //How many Questions are answerd
-    public int Answers;
+    public static AnswerManger Instance;
 
     private HealthManager healthManager;
     private bool isRealMail;
@@ -28,13 +26,8 @@ public class ButtonChoice : MonoBehaviour
 
         RealButton.onClick.AddListener(CorrectButtonClicked);
         FakeButton.onClick.AddListener(WrongButtonClicked);
-
-        //Function that when you answerd 10 questions it goes to the winscreen
-        if(Answers == 10)
-        {
-            EndScreen();
-        }
     }
+
     
     // this checks of the email is fake or not, and sees if you choose the correct answer
     public void CorrectButtonClicked()
@@ -43,11 +36,12 @@ public class ButtonChoice : MonoBehaviour
             GoodChoice();
             return;
         }
-        WrongChoice();
+        GoodChoice();
     }
 
     public void WrongButtonClicked()
     {
+        AnswerManger.Instance.IncreaseScore(1);
         if(!isRealMail){
             GoodChoice();
             return;
@@ -58,14 +52,13 @@ public class ButtonChoice : MonoBehaviour
     //if the answer is correct this function will play
     public void GoodChoice()
     {
-        Answers+= 1;
+        AnswerManger.Instance.IncreaseScore(1);
         print("CORRECT");
     }
 
     //  this function reduces health if the wrong choice has been made
     public void WrongChoice()
     {
-        Answers+= 1;
         print("wrong");
         healthManager.TakeDamage(20);
     }
@@ -74,11 +67,5 @@ public class ButtonChoice : MonoBehaviour
     public void HideClick()
     {
         Mail.SetActive(false);
-    }
-
-    //Function that goes to the winscreen
-    public void EndScreen()
-    {
-        SceneManager.LoadScene("EmailEndScreen");
     }
 }
