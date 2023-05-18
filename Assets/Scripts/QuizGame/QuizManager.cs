@@ -7,17 +7,31 @@ using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 {
+    //The list of qeustions
     public List<QuestionsAndAnswers> QnA;
+
+    //The options that you can answer
     public GameObject[] options;
+
+    //The current displayed question
     public int currentQuestion;
 
+    //The quiz UI
     public GameObject QuizPanel;
+
+    //The game-over UI
     public GameObject GameOverPanel;
 
+    //The text for the questions
     public TMP_Text QuestionText;
+
+    //The score text
     public TMP_Text ScoreText;
 
+    //The total questions
     public int totalQuestions = 0;
+
+    //The score
     public int score;
 
     // generates a question
@@ -86,7 +100,6 @@ public class QuizManager : MonoBehaviour
         // when the last question got answered, it triggers the GameOver() function
         else
         {
-            Debug.Log("No questions left");
             GameOver();
         }
     }

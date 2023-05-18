@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class ButtonChoice : MonoBehaviour
 {
-    public Button RealButton;
-    public Button FakeButton;
+    //The buttons and mail
+    public Button CorrectButton;
+    public Button IncorrectButton;
     public GameObject Mail;
 
-    //How many Questions are answerd
-    public int Answers = 0;
+    //Amount of answered questions
+    public static AnswerManager Instance;
 
+    //The manager for the healthbar
     private HealthManager healthManager;
+
+    //Check if the email is real
     private bool isRealMail;
 
     // this function grabs the players object and health, as well as add a listener to see what button is correct
@@ -26,15 +29,10 @@ public class ButtonChoice : MonoBehaviour
             healthManager = player.GetComponent<HealthManager>();
         }
 
-        RealButton.onClick.AddListener(CorrectButtonClicked);
-        FakeButton.onClick.AddListener(WrongButtonClicked);
-
-        //Function that when you answerd 10 questions it goes to the winscreen
-        if(Answers == 10)
-        {
-            EndScreen();
-        }
+        CorrectButton.onClick.AddListener(CorrectButtonClicked);
+        IncorrectButton.onClick.AddListener(WrongButtonClicked);
     }
+
     
     // this checks of the email is fake or not, and sees if you choose the correct answer
     public void CorrectButtonClicked()
@@ -43,29 +41,29 @@ public class ButtonChoice : MonoBehaviour
             GoodChoice();
             return;
         }
-        WrongChoice();
-        Answers+= 1;
+        GoodChoice();
     }
 
     public void WrongButtonClicked()
     {
         if(!isRealMail){
-            GoodChoice();
+            WrongChoice();
             return;
         }
         WrongChoice();
-        Answers+= 1;
     }
 
     //if the answer is correct this function will play
     public void GoodChoice()
     {
+        AnswerManager.Instance.IncreaseScore(1);
         print("CORRECT");
     }
 
     //  this function reduces health if the wrong choice has been made
     public void WrongChoice()
     {
+        AnswerManager.Instance.IncreaseScore(1);
         print("wrong");
         healthManager.TakeDamage(20);
     }
@@ -74,11 +72,5 @@ public class ButtonChoice : MonoBehaviour
     public void HideClick()
     {
         Mail.SetActive(false);
-    }
-
-    //Function that goes to the winscreen
-    public void EndScreen()
-    {
-        SceneManager.LoadScene("EmailEndScreen");
     }
 }
