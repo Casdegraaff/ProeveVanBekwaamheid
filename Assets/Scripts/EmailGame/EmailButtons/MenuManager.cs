@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
    
 
     // Update is called once per frame
-   void retry()
+ public void retry()
    {
       SceneManager.LoadScene("EmailGame");
    }
