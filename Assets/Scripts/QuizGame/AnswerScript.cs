@@ -17,13 +17,13 @@ public class AnswerScript : MonoBehaviour
         {
             quizManager.correct();
             answerButton.GetComponent<Image>().color = Color.green;
-            Invoke("ColorChange", 1f);
+            Invoke("ColorChange", 0.4f);
         }
         else
         {
             quizManager.wrong();
             answerButton.GetComponent<Image>().color = Color.red;
-            Invoke("ColorChange", 1f);
+            Invoke("ColorChange", 0.4f);
         }
     }
 
