@@ -605,9 +605,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab3a4f4da8124a42b029258b4348101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
-  animator: {fileID: 0}
+  nameText: {fileID: 4133527883580479758}
+  dialogueText: {fileID: 4133527882785487497}
+  animator: {fileID: 4133527883297911023}
 --- !u!4 &1194879192
 Transform:
   m_ObjectHideFlags: 0
