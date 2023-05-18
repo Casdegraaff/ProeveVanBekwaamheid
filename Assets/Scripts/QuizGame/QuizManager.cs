@@ -62,14 +62,14 @@ public class QuizManager : MonoBehaviour
     {
         score += 1;
         QnA.RemoveAt(currentQuestion);
-        generateQuestion();
+        Invoke("generateQuestion", 1f);
     }
 
     //if question is answered incorrectly, a new question generates
     public void wrong()
     {
         QnA.RemoveAt(currentQuestion);
-        generateQuestion();
+        Invoke("generateQuestion", 1f);
     }
 
     // You get to choose a correct answer for a question
