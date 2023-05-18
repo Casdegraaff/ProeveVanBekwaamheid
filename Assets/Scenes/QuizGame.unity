@@ -278,7 +278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 700, y: -162}
+  m_AnchoredPosition: {x: 700, y: -170}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &337046618
@@ -295,6 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 1304385023}
+  answerButton: {fileID: 337046616}
 --- !u!114 &337046620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -727,7 +728,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 78c97ead96134a442b90040589aae953, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -869,7 +870,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oh yeah
+  m_text: Antwoord 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1814,13 +1815,63 @@ MonoBehaviour:
     - Gevoelige informatie is vrij gekomen
     - Er zit een virus op je computer
     CorrectAnswer: 1
-  - Question: Welke van de volgende geeft het beste aan hoe je je router kan beveiligen?
+  - Question: 'Hoe kun jij je weren tegen ransomware? '
     Answers:
-    - De standaard naam en wachtwoord veranderen
-    - De administrator uitloggen wanneer de router ingesteld wordt
-    - De remote management functie uitzetten
+    - Zorgen dat software altijd up-to-date is
+    - Een back-up maken van je bestanden
+    - Nooit op verdachte linkjes klikken
     - Alle bovenstaande
     CorrectAnswer: 4
+  - Question: 'Wat moet ik weghalen bij het anonimiseren van gegevens? '
+    Answers:
+    - Naam, adres, telefoonnummers
+    - Waar je werkt
+    - Alle herleidbare gegevens (IP-adres, kleur van het tuinhek)
+    - Alle persoonlijke gegevens
+    CorrectAnswer: 3
+  - Question: Als je in een phishing-scam trapt, wat kan je dan het beste doen?
+    Answers:
+    - De fishing email verwijderen
+    - Gecomprimeerde wachtwoorden veranderen
+    - De computer uitzetten
+    - De scammer terug mailen
+    CorrectAnswer: 2
+  - Question: Waaraan kan je een verdacht bericht herkennen?
+    Answers:
+    - Onbekende afzender
+    - Een vraag om direct te betalen
+    - Taalfouten, vreemde woorden of kromme zinnen
+    - Alle bovenstaande
+    CorrectAnswer: 4
+  - Question: Welke relatie tussen phishing en ransomware is correct?
+    Answers:
+    - Ransomware kan volgen op een geslaagde phishingaanval
+    - Om phishing te voorkomen heb je betrouwbare ransomware nodig
+    - Ransomware is een variant van phishing
+    - Phishing is een soort ransomware
+    CorrectAnswer: 1
+  - Question: Je ontvangt een e-mail met een betaallink erin. Bij welke afzender
+      is dit phishing?
+    Answers:
+    - De bank
+    - De belastingdienst
+    - Een zakenrelatie die de lunchrekening betaalde
+    - Het CJIB
+    CorrectAnswer: 3
+  - Question: Wat doe met een link in een email?
+    Answers:
+    - De link in een incognito tablad openen
+    - De URL/link checken
+    - Nooit openen
+    - De link openen
+    CorrectAnswer: 2
+  - Question: Welke van de volgende is geen goed wachtwoord?
+    Answers:
+    - GemeenteAmsterdam64!
+    - Cyber062Security
+    - amsterdam2023
+    - '@mSt3Rd@M894156'
+    CorrectAnswer: 3
   options:
   - {fileID: 1532413765}
   - {fileID: 337046616}
@@ -1906,7 +1957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oh yeah
+  m_text: Antwoord 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2097,7 +2148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Which is the correct answer?
+  m_text: Vraag
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2160,7 +2211,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -136.9689, y: 0, z: -140.39467, w: -37.240562}
+  m_margin: {x: -136.9689, y: 0, z: -140.39467, w: -13.897495}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2183,16 +2234,16 @@ RectTransform:
   m_GameObject: {fileID: 1493480390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.0041, y: 6.381228, z: 5.0041}
+  m_LocalScale: {x: 5.0041, y: 7.8284903, z: 5.0041}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 947846698}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -92}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -1920, y: -1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1521530256
 GameObject:
@@ -2372,7 +2423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 700, y: 257}
+  m_AnchoredPosition: {x: 700, y: 285}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1532413767
@@ -2389,6 +2440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 1304385023}
+  answerButton: {fileID: 1532413765}
 --- !u!114 &1532413769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2411,7 +2463,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2556,7 +2608,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oh yeah
+  m_text: Antwoord 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2691,7 +2743,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oh yeah
+  m_text: Antwoord 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3025,7 +3077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 700, y: 49}
+  m_AnchoredPosition: {x: 700, y: 52}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1962698070
@@ -3042,6 +3094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 1304385023}
+  answerButton: {fileID: 1962698068}
 --- !u!114 &1962698072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3064,7 +3117,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3191,7 +3244,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 700, y: -364}
+  m_AnchoredPosition: {x: 700, y: -379}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2041580459
@@ -3208,6 +3261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 1304385023}
+  answerButton: {fileID: 2041580457}
 --- !u!114 &2041580461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3230,7 +3284,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3747,7 +3801,7 @@ RectTransform:
   m_GameObject: {fileID: 6994498128508778983}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.6912503, y: 2.5341, z: 5.6912503}
+  m_LocalScale: {x: 5.69125, y: 2.5340998, z: 5.69125}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6994498128766177285}
@@ -3758,7 +3812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.6881, y: -335}
+  m_AnchoredPosition: {x: -6.6881447, y: -334.99997}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6994498128508778983
