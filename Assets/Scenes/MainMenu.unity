@@ -330,9 +330,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: tester1
+    name: Darla
     sentences:
-    - IT WORKS!! HOLY SHIT IT WORKS!
+    - Hallo, welkom bij het dilemmaspel!
+    - ik zal je begleiden door twee spellen,
+    - 'waarbij je je kennis gaat verbreden en waar je '
+    - leert om onbetrouwbare mails te herkennen.
 --- !u!1 &166244374
 GameObject:
   m_ObjectHideFlags: 0
