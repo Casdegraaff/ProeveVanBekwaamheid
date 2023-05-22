@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 73507303}
   - component: {fileID: 73507302}
   - component: {fileID: 73507301}
+  - component: {fileID: 73507304}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -479,6 +480,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 73507304}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &73507302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,6 +530,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73507298}
   m_CullTransparentMesh: 1
+--- !u!114 &73507304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73507298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &87452707
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1009,7 @@ GameObject:
   - component: {fileID: 173067648}
   - component: {fileID: 173067647}
   - component: {fileID: 173067645}
+  - component: {fileID: 173067650}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -1034,6 +1064,18 @@ MonoBehaviour:
       - m_Target: {fileID: 373655433}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 173067650}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1102,6 +1144,22 @@ RectTransform:
   m_AnchoredPosition: {x: -2.7, y: 58.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &173067650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173067644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &185626782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,7 +1509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7c6600d82abdd14990081796eec1c2d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e15dccc840488e248a3b7fba7088e34b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2625,6 +2683,7 @@ GameObject:
   - component: {fileID: 575233984}
   - component: {fileID: 575233983}
   - component: {fileID: 575233981}
+  - component: {fileID: 575233986}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -2679,6 +2738,18 @@ MonoBehaviour:
       - m_Target: {fileID: 909085382}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 575233986}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2747,6 +2818,22 @@ RectTransform:
   m_AnchoredPosition: {x: -3.6, y: 57.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &575233986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575233980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &589542499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,6 +3075,7 @@ GameObject:
   - component: {fileID: 662732837}
   - component: {fileID: 662732836}
   - component: {fileID: 662732834}
+  - component: {fileID: 662732839}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -3042,6 +3130,18 @@ MonoBehaviour:
       - m_Target: {fileID: 248894607}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662732839}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3110,6 +3210,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0.19, y: 59.65}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &662732839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662732833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &666554332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,6 +3238,7 @@ GameObject:
   - component: {fileID: 666554337}
   - component: {fileID: 666554336}
   - component: {fileID: 666554335}
+  - component: {fileID: 666554338}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -3206,6 +3323,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 666554338}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &666554336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3244,6 +3373,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666554332}
   m_CullTransparentMesh: 1
+--- !u!114 &666554338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666554332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &675725218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,6 +3401,7 @@ GameObject:
   - component: {fileID: 675725223}
   - component: {fileID: 675725222}
   - component: {fileID: 675725221}
+  - component: {fileID: 675725224}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -3340,6 +3486,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 675725224}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &675725222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3378,6 +3536,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675725218}
   m_CullTransparentMesh: 1
+--- !u!114 &675725224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675725218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &678211027
 GameObject:
   m_ObjectHideFlags: 0
@@ -3738,6 +3912,7 @@ GameObject:
   - component: {fileID: 779220669}
   - component: {fileID: 779220668}
   - component: {fileID: 779220666}
+  - component: {fileID: 779220671}
   m_Layer: 5
   m_Name: 'Real '
   m_TagString: Real
@@ -3792,6 +3967,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1087888915}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 779220671}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3860,6 +4047,22 @@ RectTransform:
   m_AnchoredPosition: {x: -3.33, y: 60.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &779220671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779220665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &828723746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4007,6 +4210,7 @@ GameObject:
   - component: {fileID: 835727937}
   - component: {fileID: 835727936}
   - component: {fileID: 835727935}
+  - component: {fileID: 835727938}
   m_Layer: 5
   m_Name: 'Fake '
   m_TagString: Real
@@ -4091,6 +4295,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 835727938}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &835727936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4129,6 +4345,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835727932}
   m_CullTransparentMesh: 1
+--- !u!114 &835727938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835727932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &837399818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,6 +5370,7 @@ GameObject:
   - component: {fileID: 1134667235}
   - component: {fileID: 1134667234}
   - component: {fileID: 1134667233}
+  - component: {fileID: 1134667236}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -5222,6 +5455,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1134667236}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1134667234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5260,6 +5505,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134667230}
   m_CullTransparentMesh: 1
+--- !u!114 &1134667236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134667230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &1146458831
 GameObject:
   m_ObjectHideFlags: 0
@@ -6014,6 +6275,7 @@ GameObject:
   - component: {fileID: 1271868541}
   - component: {fileID: 1271868540}
   - component: {fileID: 1271868538}
+  - component: {fileID: 1271868543}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -6068,6 +6330,18 @@ MonoBehaviour:
       - m_Target: {fileID: 267156131}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1271868543}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6136,6 +6410,22 @@ RectTransform:
   m_AnchoredPosition: {x: -2.2, y: 60.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1271868543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271868537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &1283593867
 GameObject:
   m_ObjectHideFlags: 0
@@ -6195,6 +6485,7 @@ GameObject:
   - component: {fileID: 1324685050}
   - component: {fileID: 1324685049}
   - component: {fileID: 1324685047}
+  - component: {fileID: 1324685052}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -6249,6 +6540,18 @@ MonoBehaviour:
       - m_Target: {fileID: 87452711}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1324685052}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6317,6 +6620,22 @@ RectTransform:
   m_AnchoredPosition: {x: -3.8, y: 58.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1324685052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324685046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &1342169248
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,6 +6783,7 @@ GameObject:
   - component: {fileID: 1369081571}
   - component: {fileID: 1369081570}
   - component: {fileID: 1369081569}
+  - component: {fileID: 1369081572}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -6548,6 +6868,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1369081572}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1369081570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6586,6 +6918,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369081566}
   m_CullTransparentMesh: 1
+--- !u!114 &1369081572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369081566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &1424558441
 GameObject:
   m_ObjectHideFlags: 0
@@ -6598,6 +6946,7 @@ GameObject:
   - component: {fileID: 1424558445}
   - component: {fileID: 1424558444}
   - component: {fileID: 1424558442}
+  - component: {fileID: 1424558447}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -6652,6 +7001,18 @@ MonoBehaviour:
       - m_Target: {fileID: 505002792}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1424558447}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6720,6 +7081,22 @@ RectTransform:
   m_AnchoredPosition: {x: -3.8, y: 57.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1424558447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424558441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &1431801285
 GameObject:
   m_ObjectHideFlags: 0
@@ -7004,6 +7381,7 @@ GameObject:
   - component: {fileID: 1463392932}
   - component: {fileID: 1463392931}
   - component: {fileID: 1463392930}
+  - component: {fileID: 1463392933}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -7088,6 +7466,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1463392933}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1463392931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7126,6 +7516,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463392927}
   m_CullTransparentMesh: 1
+--- !u!114 &1463392933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463392927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &1526403561
 GameObject:
   m_ObjectHideFlags: 0
@@ -7138,6 +7544,7 @@ GameObject:
   - component: {fileID: 1526403565}
   - component: {fileID: 1526403564}
   - component: {fileID: 1526403562}
+  - component: {fileID: 1526403567}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -7192,6 +7599,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1753464370}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1526403567}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7260,6 +7679,22 @@ RectTransform:
   m_AnchoredPosition: {x: -2.1, y: 59.399963}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1526403567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526403561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &1548373396
 GameObject:
   m_ObjectHideFlags: 0
@@ -7855,6 +8290,7 @@ GameObject:
   - component: {fileID: 1718984101}
   - component: {fileID: 1718984100}
   - component: {fileID: 1718984098}
+  - component: {fileID: 1718984103}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -7909,6 +8345,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1713690555}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1718984103}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7977,6 +8425,22 @@ RectTransform:
   m_AnchoredPosition: {x: -3.9, y: 57.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1718984103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718984097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &1753464366
 GameObject:
   m_ObjectHideFlags: 0
@@ -8636,6 +9100,7 @@ GameObject:
   - component: {fileID: 1839676496}
   - component: {fileID: 1839676495}
   - component: {fileID: 1839676493}
+  - component: {fileID: 1839676498}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -8690,6 +9155,18 @@ MonoBehaviour:
       - m_Target: {fileID: 632202608}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1839676498}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8758,6 +9235,22 @@ RectTransform:
   m_AnchoredPosition: {x: -4, y: 57}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1839676498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839676492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &1857605485
 GameObject:
   m_ObjectHideFlags: 0
@@ -8967,6 +9460,7 @@ GameObject:
   - component: {fileID: 1986455268}
   - component: {fileID: 1986455267}
   - component: {fileID: 1986455266}
+  - component: {fileID: 1986455269}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -9051,6 +9545,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1986455269}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1986455267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9089,6 +9595,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986455263}
   m_CullTransparentMesh: 1
+--- !u!114 &1986455269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986455263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &2006563472
 GameObject:
   m_ObjectHideFlags: 0
@@ -9404,6 +9926,7 @@ GameObject:
   - component: {fileID: 2050576833}
   - component: {fileID: 2050576832}
   - component: {fileID: 2050576831}
+  - component: {fileID: 2050576834}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -9488,6 +10011,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2050576834}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2050576832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9526,6 +10061,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050576828}
   m_CullTransparentMesh: 1
+--- !u!114 &2050576834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050576828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &2098073352
 GameObject:
   m_ObjectHideFlags: 0
@@ -9675,6 +10226,7 @@ GameObject:
   - component: {fileID: 2105784106}
   - component: {fileID: 2105784105}
   - component: {fileID: 2105784104}
+  - component: {fileID: 2105784107}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -9759,6 +10311,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2105784107}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2105784105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9797,6 +10361,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105784101}
   m_CullTransparentMesh: 1
+--- !u!114 &2105784107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105784101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 
 --- !u!1 &2113544584
 GameObject:
   m_ObjectHideFlags: 0
