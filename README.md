@@ -70,6 +70,10 @@ Email game:
 
 ## Random quiz vragen door Cas
 
+
+### flow chart:
+<img src="https://cdn.discordapp.com/attachments/744949183479283785/1108161274866585670/Algorithm_flowchart_example_2.0.png" data-canonical-src="https://cdn.discordapp.com/attachments/744949183479283785/1108161274866585670/Algorithm_flowchart_example_2.0.png"/>
+
 ## Dialogue system gemaakt door Ruben
 
 ## Spel keuze animaties door Quinn
