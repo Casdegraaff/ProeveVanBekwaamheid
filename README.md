@@ -72,7 +72,7 @@ Email game:
 
 
 ### flow chart:
-<img src="https://cdn.discordapp.com/attachments/744949183479283785/1108161274866585670/Algorithm_flowchart_example_2.0.png" data-canonical-src="https://cdn.discordapp.com/attachments/744949183479283785/1108161274866585670/Algorithm_flowchart_example_2.0.png"/>
+<img src="https://cdn.discordapp.com/attachments/744949183479283785/1110140567326830672/RandomQuestionDiagram.png" data-canonical-src="https://cdn.discordapp.com/attachments/744949183479283785/1110140567326830672/RandomQuestionDiagram.png" height="700" width="449"/>
 
 ## Dialogue system gemaakt door Ruben
 
