@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -311,6 +311,7 @@ RectTransform:
   m_Children:
   - {fileID: 1548373397}
   - {fileID: 154022987}
+  - {fileID: 1247875060}
   m_Father: {fileID: 1830670755}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -545,7 +546,12 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Dat is fout, deze email is echt.
+    - 'U zal zelf weten of u op deze locatie bent '
+    - 'geweest en of u daadwerkelijk een persoonlijk '
+    - eigendom kwijt bent. Ook wordt de optie
+    - gegeven om het object zelf op te halen.
+    - Scammers zullen deze optie niet geven.
 --- !u!1 &87452707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,7 +1165,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &185626782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,7 +2839,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &589542499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3225,7 +3231,13 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Dat is fout, deze email is nep.
+    - 'Dat kunt u zien aan het feit dat zulk soort e-mails '
+    - niet op uw zakelijke mail hoort te krijgen.
+    - 'Ook is het verdacht dat er om '
+    - persoonlijke gegevens worden gevraagd en
+    - 'dat in de gegeven link veel letters '
+    - door cijfers zijn vervangen.
 --- !u!1 &666554332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,7 +3400,13 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Dat is fout, deze email is echt.
+    - 'Er word gevraagd om contact op te nemen '
+    - 'een persoon binnen het bedrijf. '
+    - 'Eventueel kan u de identiteit van deze '
+    - persoon navragen bij uw leidinggevende.
+    - Ook wordt er niet direct gevraagd
+    - "naar uw persoonsgegevens. \r\n"
 --- !u!1 &675725218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3551,7 +3569,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &678211027
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,9 +3873,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: tester1
+    name: Darla
     sentences:
-    - IT WORKS!! HOLY SHIT IT WORKS!
+    - Welkom bij de emailspel.
+    - Hier ga je leren hoe je het verschil kunt zien
+    - tussen een echte mail en phishing mails.
+    - Druk op een email en beoordeel of hij echt of nep is.
+    - Als je leven op is verlies je, maar als je ze
+    - ' alle 10 weet te beoordelen heb je gewonnen!'
+    - 'Let op dingen zoals, links, spelfouten '
+    - en de afzendernaam.
+    - Veel success!
 --- !u!114 &766831838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4062,7 +4088,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &828723746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,7 +4386,9 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Dat is fout, deze email is echt. Er wordt-
+    - niet gevraagd om persoonlijke gegevens en
+    - u kunt eventueel het e-mailadres controleren.
 --- !u!1 &837399818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5520,7 +5548,13 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Dat is fout, deze email is echt.
+    - "De identiteit van de afzender is te verifi\xEBren "
+    - bij collega's. Ook worden er geen verdere
+    - persoonsgegevens gevraagd, naast de informatie
+    - 'die de afzender al bezit.
+
+'
 --- !u!1 &1146458831
 GameObject:
   m_ObjectHideFlags: 0
@@ -6082,6 +6116,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246983412}
   m_CullTransparentMesh: 1
+--- !u!1 &1247875059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1247875060}
+  - component: {fileID: 1247875062}
+  - component: {fileID: 1247875061}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1247875060
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247875059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2052621, y: 2.2231, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35500764}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -26.6, y: -6}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1247875061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247875059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Leven
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294964480
+  m_fontColor: {r: 0, g: 0.96050787, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1247875062
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247875059}
+  m_CullTransparentMesh: 1
 --- !u!1 &1269877233
 GameObject:
   m_ObjectHideFlags: 0
@@ -6425,7 +6594,13 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Dat is fout, deze email is nep.
+    - Let op! Een zakelijke mail met spelfouten is
+    - een goed teken van een spam-mail.
+    - Ook is de link in de e-mail verdacht, omdat
+    - sommige letters zijn vervangen door cijfers.
+    - Bij twijfel kunt u altijd vragen aan uw leidinggevende
+    - of de afzender bekend is bij het bedrijf.
 --- !u!1 &1283593867
 GameObject:
   m_ObjectHideFlags: 0
@@ -6635,7 +6810,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &1342169248
 GameObject:
   m_ObjectHideFlags: 0
@@ -6933,7 +7108,14 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Dat is fout, deze email is echt.
+    - Binnen de mail wordt er niet gevraagd om uw
+    - persoonsgegevens op te geven.
+    - De link bevat geen vreemde reeksen aan cijfers
+    - of letters vervangen door cijfers. Dit is
+    - meestal een goed teken dat de link legitiem is.
+    - 'Bij twijfel kunt u navragen bij uw leidinggevende '
+    - of de informatie in deze mail klopt.
 --- !u!1 &1424558441
 GameObject:
   m_ObjectHideFlags: 0
@@ -7096,7 +7278,13 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Dat is fout, deze email is nep.
+    - 'Dit soort mail horen niet binnen te komen '
+    - op uw zakelijke mail. Verder bevat
+    - de e-mail een link waarin een aantal letters
+    - zijn vervangen door cijfers. Hetzelfde is
+    - het geval in de naam van de afzender, dit is
+    - een sterk singaal dat deze e-mail verdacht is.
 --- !u!1 &1431801285
 GameObject:
   m_ObjectHideFlags: 0
@@ -7531,7 +7719,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &1526403561
 GameObject:
   m_ObjectHideFlags: 0
@@ -7694,7 +7882,13 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Dat is fout, deze email is nep.
+    - In deze mail wordt er niet benoemd wie
+    - de kennis is van de afzender,
+    - dit betekent dat u niet de identiteit van
+    - 'de afzender kan bevestigen. Daarnaast- '
+    - 'bevat de link een reeks aan cijfers. Daardoor- '
+    - is het niet duidelijk waar de link naartoe gaat.
 --- !u!1 &1548373396
 GameObject:
   m_ObjectHideFlags: 0
@@ -8440,7 +8634,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &1753464366
 GameObject:
   m_ObjectHideFlags: 0
@@ -9250,7 +9444,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &1857605485
 GameObject:
   m_ObjectHideFlags: 0
@@ -9610,7 +9804,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &2006563472
 GameObject:
   m_ObjectHideFlags: 0
@@ -10076,7 +10270,10 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - 'Dat is fout, deze email is echt. '
+    - 'Dat kunt u zien aan het formele taalgebruik '
+    - 'en dat er niet wordt gevraagd '
+    - 'naar persoonlijke gegevens. '
 --- !u!1 &2098073352
 GameObject:
   m_ObjectHideFlags: 0
@@ -10376,7 +10573,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - 
+    - Goed bezig!
 --- !u!1 &2113544584
 GameObject:
   m_ObjectHideFlags: 0

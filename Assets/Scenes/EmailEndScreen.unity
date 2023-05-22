@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -631,7 +631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: -590.5}
+  m_AnchoredPosition: {x: -3, y: -617}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &555737134
@@ -995,7 +995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 304, y: -184}
+  m_AnchoredPosition: {x: 364, y: -184}
   m_SizeDelta: {x: 317.3029, y: 76.3759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1619293843
@@ -1135,9 +1135,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: tester1
+    name: Darla
     sentences:
-    - IT WORKS!! HOLY SHIT IT WORKS!
+    - Goed gedaan!
+    - Je hebt alle email beoordeeld!
+    - Als je wilt kan je nu de quiz maken,
+    - en ik wens je veel geluk!
 --- !u!114 &1661244158
 MonoBehaviour:
   m_ObjectHideFlags: 0
