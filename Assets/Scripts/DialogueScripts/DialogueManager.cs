@@ -10,13 +10,8 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Animator animator;
-    private Queue<string> sentences;
+    private Queue<string> sentences = new Queue<string>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        sentences = new Queue<string>();
-    }
 
     // This manages what name and sentences will be shown and clears the previous sentences
     public void StartDialogue(Dialogue dialogue)
@@ -25,7 +20,7 @@ public class DialogueManager : MonoBehaviour
 
         nameText.text = dialogue.name;
 
-        sentences.Clear();
+        sentences?.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
