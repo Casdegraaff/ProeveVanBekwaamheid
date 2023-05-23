@@ -77,5 +77,5 @@ Email game:
 ## Dialogue system gemaakt door Ruben
 
 ## Spel keuze animaties door Quinn
-  
+![Blank diagram](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54802902/9c0364c7-d504-48b7-8457-2a026134884d)
 
