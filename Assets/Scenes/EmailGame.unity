@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3875,7 +3875,7 @@ MonoBehaviour:
   dialogue:
     name: Darla
     sentences:
-    - Welkom bij de emailspel.
+    - Welkom bij het emailspel.
     - Hier ga je leren hoe je het verschil kunt zien
     - tussen een echte mail en phishing mails.
     - Druk op een email en beoordeel of hij echt of nep is.
@@ -3883,7 +3883,7 @@ MonoBehaviour:
     - ' alle 10 weet te beoordelen heb je gewonnen!'
     - 'Let op dingen zoals, links, spelfouten '
     - en de afzendernaam.
-    - Veel success!
+    - Veel succes!
 --- !u!114 &766831838
 MonoBehaviour:
   m_ObjectHideFlags: 0

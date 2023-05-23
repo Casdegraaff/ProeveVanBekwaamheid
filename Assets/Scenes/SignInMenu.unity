@@ -2107,7 +2107,7 @@ MonoBehaviour:
     sentences:
     - Wacht even!
     - Vul niet zomaar je inloggevens in!
-    - Phishers en hackers kunnen je gegevens stelen,
+    - Phishers en hackers kunnen je gegevens stelen
     - en gebruiken als je niet oplet zoals nu!
 --- !u!1 &1699623489
 GameObject:

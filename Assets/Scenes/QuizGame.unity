@@ -1029,7 +1029,7 @@ MonoBehaviour:
     sentences:
     - Welkom bij de quiz.
     - Hier ga je je kennis testen over cybersecurity.
-    - Beantwoord deze multichoice vragen,
+    - Beantwoord deze meerkeuze vragen
     - en zie wat voor score je krijgt!
     - Veel geluk!
 --- !u!114 &547609394
@@ -2387,7 +2387,7 @@ MonoBehaviour:
     CorrectAnswer: 3
   - Question: Als je in een phishing-scam trapt, wat kan je dan het beste doen?
     Answers:
-    - De fishing email verwijderen
+    - De pfishing email verwijderen
     - Gecomprimeerde wachtwoorden veranderen
     - De computer uitzetten
     - De scammer terug mailen
@@ -2414,7 +2414,7 @@ MonoBehaviour:
     - Een zakenrelatie die de lunchrekening betaalde
     - Het CJIB
     CorrectAnswer: 3
-  - Question: Wat doe met een link in een email?
+  - Question: Wat doe je met een link in een email?
     Answers:
     - De link in een incognito tablad openen
     - De URL/link checken
