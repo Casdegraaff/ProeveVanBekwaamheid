@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -311,6 +311,7 @@ RectTransform:
   m_Children:
   - {fileID: 1548373397}
   - {fileID: 154022987}
+  - {fileID: 1247875060}
   m_Father: {fileID: 1830670755}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -395,6 +396,7 @@ GameObject:
   - component: {fileID: 73507303}
   - component: {fileID: 73507302}
   - component: {fileID: 73507301}
+  - component: {fileID: 73507304}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -479,6 +481,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 73507304}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &73507302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,6 +531,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73507298}
   m_CullTransparentMesh: 1
+--- !u!114 &73507304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73507298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Dat is fout, deze email is echt.
+    - 'U zal zelf weten of u op deze locatie bent '
+    - 'geweest en of u daadwerkelijk een persoonlijk '
+    - eigendom kwijt bent. Ook wordt de optie
+    - gegeven om het object zelf op te halen.
+    - Scammers zullen deze optie niet geven.
 --- !u!1 &87452707
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1015,7 @@ GameObject:
   - component: {fileID: 173067648}
   - component: {fileID: 173067647}
   - component: {fileID: 173067645}
+  - component: {fileID: 173067650}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -1034,6 +1070,18 @@ MonoBehaviour:
       - m_Target: {fileID: 373655433}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 173067650}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1102,6 +1150,22 @@ RectTransform:
   m_AnchoredPosition: {x: -2.7, y: 58.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &173067650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173067644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &185626782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,7 +1515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7c6600d82abdd14990081796eec1c2d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e15dccc840488e248a3b7fba7088e34b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2625,6 +2689,7 @@ GameObject:
   - component: {fileID: 575233984}
   - component: {fileID: 575233983}
   - component: {fileID: 575233981}
+  - component: {fileID: 575233986}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -2679,6 +2744,18 @@ MonoBehaviour:
       - m_Target: {fileID: 909085382}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 575233986}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2747,6 +2824,22 @@ RectTransform:
   m_AnchoredPosition: {x: -3.6, y: 57.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &575233986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575233980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &589542499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,6 +3081,7 @@ GameObject:
   - component: {fileID: 662732837}
   - component: {fileID: 662732836}
   - component: {fileID: 662732834}
+  - component: {fileID: 662732839}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -3042,6 +3136,18 @@ MonoBehaviour:
       - m_Target: {fileID: 248894607}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662732839}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3110,6 +3216,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0.19, y: 59.65}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &662732839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662732833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Dat is fout, deze email is nep.
+    - 'Dat kunt u zien aan het feit dat zulk soort e-mails '
+    - niet op uw zakelijke mail hoort te krijgen.
+    - 'Ook is het verdacht dat er om '
+    - persoonlijke gegevens worden gevraagd en
+    - 'dat in de gegeven link veel letters '
+    - door cijfers zijn vervangen.
 --- !u!1 &666554332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,6 +3250,7 @@ GameObject:
   - component: {fileID: 666554337}
   - component: {fileID: 666554336}
   - component: {fileID: 666554335}
+  - component: {fileID: 666554338}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -3206,6 +3335,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 666554338}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &666554336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3244,6 +3385,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666554332}
   m_CullTransparentMesh: 1
+--- !u!114 &666554338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666554332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Dat is fout, deze email is echt.
+    - 'Er word gevraagd om contact op te nemen '
+    - 'een persoon binnen het bedrijf. '
+    - 'Eventueel kan u de identiteit van deze '
+    - persoon navragen bij uw leidinggevende.
+    - Ook wordt er niet direct gevraagd
+    - "naar uw persoonsgegevens. \r\n"
 --- !u!1 &675725218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,6 +3419,7 @@ GameObject:
   - component: {fileID: 675725223}
   - component: {fileID: 675725222}
   - component: {fileID: 675725221}
+  - component: {fileID: 675725224}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -3340,6 +3504,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 675725224}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &675725222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3378,6 +3554,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675725218}
   m_CullTransparentMesh: 1
+--- !u!114 &675725224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675725218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &678211027
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,9 +3873,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: tester1
+    name: Darla
     sentences:
-    - IT WORKS!! HOLY SHIT IT WORKS!
+    - Welkom bij de emailspel.
+    - Hier ga je leren hoe je het verschil kunt zien
+    - tussen een echte mail en phishing mails.
+    - Druk op een email en beoordeel of hij echt of nep is.
+    - Als je leven op is verlies je, maar als je ze
+    - ' alle 10 weet te beoordelen heb je gewonnen!'
+    - 'Let op dingen zoals, links, spelfouten '
+    - en de afzendernaam.
+    - Veel success!
 --- !u!114 &766831838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3738,6 +3938,7 @@ GameObject:
   - component: {fileID: 779220669}
   - component: {fileID: 779220668}
   - component: {fileID: 779220666}
+  - component: {fileID: 779220671}
   m_Layer: 5
   m_Name: 'Real '
   m_TagString: Real
@@ -3792,6 +3993,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1087888915}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 779220671}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3860,6 +4073,22 @@ RectTransform:
   m_AnchoredPosition: {x: -3.33, y: 60.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &779220671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779220665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &828723746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4007,6 +4236,7 @@ GameObject:
   - component: {fileID: 835727937}
   - component: {fileID: 835727936}
   - component: {fileID: 835727935}
+  - component: {fileID: 835727938}
   m_Layer: 5
   m_Name: 'Fake '
   m_TagString: Real
@@ -4091,6 +4321,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 835727938}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &835727936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4129,6 +4371,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835727932}
   m_CullTransparentMesh: 1
+--- !u!114 &835727938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835727932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Dat is fout, deze email is echt. Er wordt-
+    - niet gevraagd om persoonlijke gegevens en
+    - u kunt eventueel het e-mailadres controleren.
 --- !u!1 &837399818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,6 +5398,7 @@ GameObject:
   - component: {fileID: 1134667235}
   - component: {fileID: 1134667234}
   - component: {fileID: 1134667233}
+  - component: {fileID: 1134667236}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -5222,6 +5483,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1134667236}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1134667234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5260,6 +5533,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134667230}
   m_CullTransparentMesh: 1
+--- !u!114 &1134667236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134667230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Dat is fout, deze email is echt.
+    - "De identiteit van de afzender is te verifi\xEBren "
+    - bij collega's. Ook worden er geen verdere
+    - persoonsgegevens gevraagd, naast de informatie
+    - 'die de afzender al bezit.
+
+'
 --- !u!1 &1146458831
 GameObject:
   m_ObjectHideFlags: 0
@@ -5821,6 +6116,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246983412}
   m_CullTransparentMesh: 1
+--- !u!1 &1247875059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1247875060}
+  - component: {fileID: 1247875062}
+  - component: {fileID: 1247875061}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1247875060
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247875059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2052621, y: 2.2231, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35500764}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -26.6, y: -6}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1247875061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247875059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Leven
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294964480
+  m_fontColor: {r: 0, g: 0.96050787, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1247875062
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247875059}
+  m_CullTransparentMesh: 1
 --- !u!1 &1269877233
 GameObject:
   m_ObjectHideFlags: 0
@@ -6014,6 +6444,7 @@ GameObject:
   - component: {fileID: 1271868541}
   - component: {fileID: 1271868540}
   - component: {fileID: 1271868538}
+  - component: {fileID: 1271868543}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -6068,6 +6499,18 @@ MonoBehaviour:
       - m_Target: {fileID: 267156131}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1271868543}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6136,6 +6579,28 @@ RectTransform:
   m_AnchoredPosition: {x: -2.2, y: 60.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1271868543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271868537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Dat is fout, deze email is nep.
+    - Let op! Een zakelijke mail met spelfouten is
+    - een goed teken van een spam-mail.
+    - Ook is de link in de e-mail verdacht, omdat
+    - sommige letters zijn vervangen door cijfers.
+    - Bij twijfel kunt u altijd vragen aan uw leidinggevende
+    - of de afzender bekend is bij het bedrijf.
 --- !u!1 &1283593867
 GameObject:
   m_ObjectHideFlags: 0
@@ -6195,6 +6660,7 @@ GameObject:
   - component: {fileID: 1324685050}
   - component: {fileID: 1324685049}
   - component: {fileID: 1324685047}
+  - component: {fileID: 1324685052}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -6249,6 +6715,18 @@ MonoBehaviour:
       - m_Target: {fileID: 87452711}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1324685052}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6317,6 +6795,22 @@ RectTransform:
   m_AnchoredPosition: {x: -3.8, y: 58.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1324685052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324685046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &1342169248
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,6 +6958,7 @@ GameObject:
   - component: {fileID: 1369081571}
   - component: {fileID: 1369081570}
   - component: {fileID: 1369081569}
+  - component: {fileID: 1369081572}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Real
@@ -6548,6 +7043,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1369081572}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1369081570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6586,6 +7093,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369081566}
   m_CullTransparentMesh: 1
+--- !u!114 &1369081572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369081566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Dat is fout, deze email is echt.
+    - Binnen de mail wordt er niet gevraagd om uw
+    - persoonsgegevens op te geven.
+    - De link bevat geen vreemde reeksen aan cijfers
+    - of letters vervangen door cijfers. Dit is
+    - meestal een goed teken dat de link legitiem is.
+    - 'Bij twijfel kunt u navragen bij uw leidinggevende '
+    - of de informatie in deze mail klopt.
 --- !u!1 &1424558441
 GameObject:
   m_ObjectHideFlags: 0
@@ -6598,6 +7128,7 @@ GameObject:
   - component: {fileID: 1424558445}
   - component: {fileID: 1424558444}
   - component: {fileID: 1424558442}
+  - component: {fileID: 1424558447}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -6652,6 +7183,18 @@ MonoBehaviour:
       - m_Target: {fileID: 505002792}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1424558447}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6720,6 +7263,28 @@ RectTransform:
   m_AnchoredPosition: {x: -3.8, y: 57.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1424558447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424558441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Dat is fout, deze email is nep.
+    - 'Dit soort mail horen niet binnen te komen '
+    - op uw zakelijke mail. Verder bevat
+    - de e-mail een link waarin een aantal letters
+    - zijn vervangen door cijfers. Hetzelfde is
+    - het geval in de naam van de afzender, dit is
+    - een sterk singaal dat deze e-mail verdacht is.
 --- !u!1 &1431801285
 GameObject:
   m_ObjectHideFlags: 0
@@ -7004,6 +7569,7 @@ GameObject:
   - component: {fileID: 1463392932}
   - component: {fileID: 1463392931}
   - component: {fileID: 1463392930}
+  - component: {fileID: 1463392933}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -7088,6 +7654,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1463392933}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1463392931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7126,6 +7704,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463392927}
   m_CullTransparentMesh: 1
+--- !u!114 &1463392933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463392927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &1526403561
 GameObject:
   m_ObjectHideFlags: 0
@@ -7138,6 +7732,7 @@ GameObject:
   - component: {fileID: 1526403565}
   - component: {fileID: 1526403564}
   - component: {fileID: 1526403562}
+  - component: {fileID: 1526403567}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -7192,6 +7787,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1753464370}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1526403567}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7260,6 +7867,28 @@ RectTransform:
   m_AnchoredPosition: {x: -2.1, y: 59.399963}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1526403567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526403561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Dat is fout, deze email is nep.
+    - In deze mail wordt er niet benoemd wie
+    - de kennis is van de afzender,
+    - dit betekent dat u niet de identiteit van
+    - 'de afzender kan bevestigen. Daarnaast- '
+    - 'bevat de link een reeks aan cijfers. Daardoor- '
+    - is het niet duidelijk waar de link naartoe gaat.
 --- !u!1 &1548373396
 GameObject:
   m_ObjectHideFlags: 0
@@ -7855,6 +8484,7 @@ GameObject:
   - component: {fileID: 1718984101}
   - component: {fileID: 1718984100}
   - component: {fileID: 1718984098}
+  - component: {fileID: 1718984103}
   m_Layer: 5
   m_Name: Real
   m_TagString: Fake
@@ -7909,6 +8539,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1713690555}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1718984103}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7977,6 +8619,22 @@ RectTransform:
   m_AnchoredPosition: {x: -3.9, y: 57.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1718984103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718984097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &1753464366
 GameObject:
   m_ObjectHideFlags: 0
@@ -8636,6 +9294,7 @@ GameObject:
   - component: {fileID: 1839676496}
   - component: {fileID: 1839676495}
   - component: {fileID: 1839676493}
+  - component: {fileID: 1839676498}
   m_Layer: 5
   m_Name: Real
   m_TagString: Real
@@ -8690,6 +9349,18 @@ MonoBehaviour:
       - m_Target: {fileID: 632202608}
         m_TargetAssemblyTypeName: ButtonChoice, Assembly-CSharp
         m_MethodName: HideClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1839676498}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8758,6 +9429,22 @@ RectTransform:
   m_AnchoredPosition: {x: -4, y: 57}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1839676498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839676492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &1857605485
 GameObject:
   m_ObjectHideFlags: 0
@@ -8967,6 +9654,7 @@ GameObject:
   - component: {fileID: 1986455268}
   - component: {fileID: 1986455267}
   - component: {fileID: 1986455266}
+  - component: {fileID: 1986455269}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -9051,6 +9739,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1986455269}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1986455267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9089,6 +9789,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986455263}
   m_CullTransparentMesh: 1
+--- !u!114 &1986455269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986455263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &2006563472
 GameObject:
   m_ObjectHideFlags: 0
@@ -9404,6 +10120,7 @@ GameObject:
   - component: {fileID: 2050576833}
   - component: {fileID: 2050576832}
   - component: {fileID: 2050576831}
+  - component: {fileID: 2050576834}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -9488,6 +10205,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2050576834}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2050576832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9526,6 +10255,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050576828}
   m_CullTransparentMesh: 1
+--- !u!114 &2050576834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050576828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - 'Dat is fout, deze email is echt. '
+    - 'Dat kunt u zien aan het formele taalgebruik '
+    - 'en dat er niet wordt gevraagd '
+    - 'naar persoonlijke gegevens. '
 --- !u!1 &2098073352
 GameObject:
   m_ObjectHideFlags: 0
@@ -9675,6 +10423,7 @@ GameObject:
   - component: {fileID: 2105784106}
   - component: {fileID: 2105784105}
   - component: {fileID: 2105784104}
+  - component: {fileID: 2105784107}
   m_Layer: 5
   m_Name: Fake
   m_TagString: Fake
@@ -9759,6 +10508,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2105784107}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2105784105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9797,6 +10558,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105784101}
   m_CullTransparentMesh: 1
+--- !u!114 &2105784107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105784101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2816e6eb742746b6f6bc09585a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Darla
+    sentences:
+    - Goed bezig!
 --- !u!1 &2113544584
 GameObject:
   m_ObjectHideFlags: 0
