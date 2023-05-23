@@ -2370,7 +2370,7 @@ MonoBehaviour:
     - De opslag van je pc zit vol
     - Gevoelige informatie is vrij gekomen
     - Er zit een virus op je computer
-    CorrectAnswer: 1
+    CorrectAnswer: 3
   - Question: 'Hoe kun jij je weren tegen ransomware? '
     Answers:
     - Zorgen dat software altijd up-to-date is
