@@ -103,7 +103,7 @@ ___
 
 Hier laat ik zien hoe de keuze van een game werkt en wat er gebeurd als je op een scherm klikt(Oftewel kiezen van een van de 2 games). Het moment dat je over een scherm gaat highlight het scherm op en komt de naam van de game naar boven. Als je op een van de schermen klikt begint er een animatie te spelen.
 
-De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/QuizGame/QuizManager.cs) vinden.
+De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/Animation/start_game.cs) vinden.
 
 ![one page](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54802902/d6a421b4-6199-4911-a338-b79da9d88238)
 
