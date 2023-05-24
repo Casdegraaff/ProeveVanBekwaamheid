@@ -53,7 +53,9 @@ overige software:
 
 [Show email knoppen](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/EmailSpawner.cs)  
 
-[Inbox knop](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs)
+[true false knoppen](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs)
+
+
 
 ### Quinn  
  Menu:  
