@@ -68,14 +68,37 @@ Email game:
 
 [true or false email knoppen & game finish](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs) 
 
-## Random quiz vragen door Cas
+## Quiz game door Cas
 
+### Visual sheet score:
 
-### flow chart:
+Hier laat ik zien hoe het score systeem werkt door middel van een visual sheet.
+
+De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/QuizGame/QuizManager.cs) vinden.
+
+![ScoreSheet](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54799365/73f095e0-0cd9-4072-bcc2-17b6998885e6)
+
+### Visual sheet vragen randomizer:
+
+Hier laat ik zien hoe de vragen randomizer werkt door middel van een visual sheet.
+
+De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/QuizGame/QuizManager.cs) vinden.
+
+![RandomVisual](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54799365/b745b93b-c911-4e3f-ba59-cec8196031b2)
+
+### flow chart vragen randomizer:
+
+Hier laat ik zien hoe de vragen randomizer werkt door middel van een flow chart
+
 <img src="https://cdn.discordapp.com/attachments/744949183479283785/1110140567326830672/RandomQuestionDiagram.png" data-canonical-src="https://cdn.discordapp.com/attachments/744949183479283785/1110140567326830672/RandomQuestionDiagram.png" height="700" width="449"/>
+
+___
 
 ## Dialogue system gemaakt door Ruben
 <img src= https://cdn.discordapp.com/attachments/889445941717897246/1110849344699117578/Algorithm_flowchart_example_2.png height="700" width="449"/>
+
+___
+
 ## Spel keuze animaties door Quinn
 
 Hier laat ik zien hoe de keuze van een game werkt en wat er gebeurd als je op een scherm klikt(Oftewel kiezen van een van de 2 games). Het moment dat je over een scherm gaat highlight het scherm op en komt de naam van de game naar boven. Als je op een van de schermen klikt begint er een animatie te spelen. Zoals het voorbeeld benenden goed laat zien.  
