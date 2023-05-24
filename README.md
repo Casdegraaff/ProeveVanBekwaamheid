@@ -76,6 +76,8 @@ Email game:
 
 ## Dialogue system gemaakt door Ruben
 
+![Algorithm_flowchart_example_2](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54802902/d28acc14-3a0e-460e-add1-06fc2bd8b48c)
+
 ## Spel keuze animaties door Quinn
 
 Hier laat ik zien hoe de keuze van een game werkt en wat er gebeurd als je op een scherm klikt(Oftewel kiezen van een van de 2 games). Het moment dat je over een scherm gaat highlight het scherm op en komt de naam van de game naar boven. Als je op een van de schermen klikt begint er een animatie te spelen. Zoals het voorbeeld benenden goed laat zien.  
