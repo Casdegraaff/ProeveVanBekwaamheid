@@ -51,14 +51,14 @@ overige software:
 
  Email game:  
 
-[show email knoppen](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/EmailSpawner.cs)  
+[Show email knoppen](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/EmailSpawner.cs)  
 
-[inbox knop](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs)
+[Inbox knop](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs)
 
 ### Quinn  
  Menu:  
 
-[clickable monitor systeem](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/Animation/start_game.cs)
+[Klikbaar monitor systeem](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/Animation/start_game.cs)
 
 [Main menu en options menu](https://github.com/Casdegraaff/ProeveVanBekwaamheid/tree/Development/Assets/Scripts/MainMenu)
 
@@ -66,7 +66,7 @@ overige software:
 
 Email game:    
 
-[true or false email knoppen & game finish](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs) 
+[Nep of echt email knoppen & game finish](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/EmailGame/EmailButtons/ButtonChoice.cs) 
 
 ## Quiz game door Cas
 
