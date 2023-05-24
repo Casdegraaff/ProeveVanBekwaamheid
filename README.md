@@ -101,7 +101,13 @@ ___
 
 ## Spel keuze animaties door Quinn
 
-Hier laat ik zien hoe de keuze van een game werkt en wat er gebeurd als je op een scherm klikt(Oftewel kiezen van een van de 2 games). Het moment dat je over een scherm gaat highlight het scherm op en komt de naam van de game naar boven. Als je op een van de schermen klikt begint er een animatie te spelen. Zoals het voorbeeld benenden goed laat zien.  
+Hier laat ik zien hoe de keuze van een game werkt en wat er gebeurd als je op een scherm klikt(Oftewel kiezen van een van de 2 games). Het moment dat je over een scherm gaat highlight het scherm op en komt de naam van de game naar boven. Als je op een van de schermen klikt begint er een animatie te spelen.
+
+De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/QuizGame/QuizManager.cs) vinden.
+
+![one page](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54802902/d6a421b4-6199-4911-a338-b79da9d88238)
+
+### flow chart scherm animaties
 
 ![Blank diagram](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54802902/9c0364c7-d504-48b7-8457-2a026134884d)
 
