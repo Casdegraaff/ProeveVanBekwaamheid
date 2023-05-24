@@ -97,6 +97,9 @@ Hier laat ik zien hoe de vragen randomizer werkt door middel van een flow chart
 ___
 
 ## Dialogue system gemaakt door Ruben
+
+![Screenshot_2](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54803214/e0b2cf85-6912-49ab-847f-f34e47b35f8f)  
+
 <img src= https://cdn.discordapp.com/attachments/889445941717897246/1110849344699117578/Algorithm_flowchart_example_2.png height="700" width="449"/>
 
 ___
