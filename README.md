@@ -78,7 +78,7 @@ Hier laat ik zien hoe het score systeem werkt door middel van een visual sheet.
 
 De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/QuizGame/QuizManager.cs) vinden.
 
-![ScoreSheet](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54799365/73f095e0-0cd9-4072-bcc2-17b6998885e6)
+![QuizScoreSheet](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54799365/d786e441-74a6-45ad-9749-3ff5930a22cd)
 
 ### Visual sheet vragen randomizer:
 
@@ -86,7 +86,7 @@ Hier laat ik zien hoe de vragen randomizer werkt door middel van een visual shee
 
 De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/QuizGame/QuizManager.cs) vinden.
 
-![RandomVisual](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54799365/b745b93b-c911-4e3f-ba59-cec8196031b2)
+![QuizRandomSheet](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54799365/a8de44e7-5ecc-45dd-9674-1da3471860c8)
 
 ### flow chart vragen randomizer:
 
@@ -104,8 +104,8 @@ Hier laat ik zien de dialogue system werkt door middel van een visual sheet.
 
 De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/tree/Development/Assets/Scripts/DialogueScripts) vinden.
 
+![DialogueSheet](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54799365/477dd76f-1edb-47f1-8296-5696298da956)
 
-![Screenshot_2](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54803214/e0b2cf85-6912-49ab-847f-f34e47b35f8f) 
 
 ### Flow chart dialogue system:
 
@@ -121,7 +121,7 @@ De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanB
 
 ### Visual sheet scherm animaties:
 
-![one page](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54802902/d6a421b4-6199-4911-a338-b79da9d88238)
+![MonitorSheet](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54799365/2f469356-145d-4627-af6a-6a42b6d050a4)
 
 ### flow chart scherm animaties
 
