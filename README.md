@@ -98,7 +98,16 @@ ___
 
 ## Dialogue system gemaakt door Ruben
 
-![Screenshot_2](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54803214/e0b2cf85-6912-49ab-847f-f34e47b35f8f)  
+
+### Visual sheet dialogue system:
+Hier laat ik zien de dialogue system werkt door middel van een visual sheet.
+
+De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/tree/Development/Assets/Scripts/DialogueScripts) vinden.
+
+
+![Screenshot_2](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54803214/e0b2cf85-6912-49ab-847f-f34e47b35f8f) 
+
+### Flow chart dialogue system:
 
 <img src= https://cdn.discordapp.com/attachments/889445941717897246/1110849344699117578/Algorithm_flowchart_example_2.png height="700" width="449"/>
 
@@ -109,6 +118,8 @@ ___
 Hier laat ik zien hoe de keuze van een game werkt en wat er gebeurd als je op een scherm klikt(Oftewel kiezen van een van de 2 games). Het moment dat je over een scherm gaat highlight het scherm op en komt de naam van de game naar boven. Als je op een van de schermen klikt begint er een animatie te spelen.
 
 De code van deze feature kan je [hier](https://github.com/Casdegraaff/ProeveVanBekwaamheid/blob/Development/Assets/Scripts/Animation/start_game.cs) vinden.
+
+### Visual sheet scherm animaties:
 
 ![one page](https://github.com/Casdegraaff/ProeveVanBekwaamheid/assets/54802902/d6a421b4-6199-4911-a338-b79da9d88238)
 
