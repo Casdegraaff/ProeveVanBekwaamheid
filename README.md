@@ -10,9 +10,9 @@ Wij hebben hiervoor 2 verschillende soorten games gemaakt:
 * Een phishing/scam training waarin je over meerdere emails moet zeggen of ze echt zijn of dat het complete fraude is.
 
 ## Team:
-1. Ruben Dudink (**Scrum Master**)
+1. Ruben Dudink (**Scrum Master 2.0**)
 2. Cas de Graaff (**Lead dev & notulist**)
-3. Quinn Croese 
+3. Quinn Croese (**Scrum Master**)
 4. Lynn Hiep (**Scrum Master**)
 5. Miles Schalkwijk (**Lead artist**)
 6. Sanne Kaat (**Product owner**)
